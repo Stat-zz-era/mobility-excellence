@@ -1,0 +1,1 @@
+Sterling.Android.UnitTest.MainActivity;sterling.android.unittest.MainActivity

@@ -1,0 +1,15 @@
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android.UnitTest/obj/Debug/MonoAndroid,Version=v4.4.AssemblyAttribute.cs
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android.UnitTest/bin/Debug/Sterling.Android.UnitTest.dll.mdb
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android.UnitTest/bin/Debug/Sterling.Android.UnitTest.dll
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android.UnitTest/bin/Debug/Sterling.Android.UnitTest.apk
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android.UnitTest/obj/Debug/android/bin/Sterling.Android.UnitTest.apk
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android.UnitTest/obj/Debug/res/layout/main.xml
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android.UnitTest/obj/Debug/res/values/strings.xml
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android.UnitTest/obj/Debug/res/drawable/icon.png
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android.UnitTest/obj/Debug/R.cs.flag
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android.UnitTest/bin/Debug/Sterling.Android.UnitTest-Signed.apk
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android.UnitTest/obj/Debug/uploadflags.txt
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android.UnitTest/obj/Debug/Sterling.Android.UnitTest.dll
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android.UnitTest/obj/Debug/Sterling.Android.UnitTest.dll.mdb
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android.UnitTest/bin/Debug/Sterling.Android.dll
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android.UnitTest/bin/Debug/Sterling.Android.dll.mdb

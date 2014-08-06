@@ -1,0 +1,23 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="Android.Google14" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Sterling.IOS.UnitTest" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/Les/Desktop/Sterling/Sterling.IOS.UnitTest/AppDelegate.cs" line="36" column="1" />
+      <Breakpoint file="/Users/Les/Desktop/Sterling/Sterling.IOS.UnitTest/AppDelegate.cs" line="42" column="24" />
+      <Breakpoint file="/Users/Les/Desktop/Sterling/Sterling.IOS.UnitTest/Sterling.IOS.UnitTestViewController.cs" line="39" column="31" />
+      <Breakpoint file="/Users/Les/Desktop/Sterling/Sterling.Common.UnitTest/Database/PersonRespository.cs" line="62" column="32" />
+      <Breakpoint file="/Users/Les/Desktop/Sterling/Sterling.Common/MemoryDriver.cs" line="49" column="1" />
+      <Breakpoint file="/Users/Les/Desktop/Sterling/Sterling.Common.UnitTest/ViewModel/MainViewModel.cs" line="103" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

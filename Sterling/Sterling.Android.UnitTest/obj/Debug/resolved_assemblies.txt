@@ -1,0 +1,2 @@
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android.UnitTest/bin/Debug/Sterling.Android.UnitTest.dll
+/Users/Les/Desktop/Custom Controls Applications/Sterling/Sterling.Android/bin/Debug/Sterling.Android.dll
