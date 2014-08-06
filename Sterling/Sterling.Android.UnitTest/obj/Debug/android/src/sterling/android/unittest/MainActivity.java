@@ -2,7 +2,7 @@ package sterling.android.unittest;
 
 
 public class MainActivity
-	extends android.app.Activity
+	extends android.app.ListActivity
 	implements
 		mono.android.IGCUserPeer
 {

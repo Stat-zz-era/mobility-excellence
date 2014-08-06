@@ -103,6 +103,7 @@
     <Compile Include="Sterling.IOS.UnitTestViewController.designer.cs">
       <DependentUpon>Sterling.IOS.UnitTestViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="PersonTableSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />

@@ -11,6 +11,17 @@ namespace Sterling.Common.UnitTest
         {
             AppDb.Init();
         }
+
+        public async Task<bool> HasKey(){
+            bool hasKeys = false;
+            foreach (var item in AppDb.Database.Query<PersonModel, int>())
+            {
+                hasKeys = true;
+                break;
+            }
+            return hasKeys;
+        }
+
         public async Task<List<PersonModel>> GetAllPeoeple()
         {
             return await Task.Run(() =>

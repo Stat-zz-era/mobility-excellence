@@ -1,1 +1,2 @@
 Sterling.Android.UnitTest.MainActivity;sterling.android.unittest.MainActivity
+Sterling.Android.UnitTest.PersonTableAdapter;sterling.android.unittest.PersonTableAdapter

@@ -16,17 +16,13 @@ namespace Sterling.IOS.UnitTest
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton btnGet { get; set; }
-
-		[Action ("btnGet_TouchUpInside:")]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		partial void btnGet_TouchUpInside (UIButton sender);
+		UITableView tbPeople { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (btnGet != null) {
-				btnGet.Dispose ();
-				btnGet = null;
+			if (tbPeople != null) {
+				tbPeople.Dispose ();
+				tbPeople = null;
 			}
 		}
 	}
