@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropDown", "DropDown\DropDown.csproj", "{84BB0D21-7893-42A0-A814-4EFC209A9BAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchUX", "TouchUX\TouchUX.csproj", "{708B358A-35D0-4E9B-9961-21C1044A5F2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{708B358A-35D0-4E9B-9961-21C1044A5F2E}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{708B358A-35D0-4E9B-9961-21C1044A5F2E}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{708B358A-35D0-4E9B-9961-21C1044A5F2E}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{708B358A-35D0-4E9B-9961-21C1044A5F2E}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{708B358A-35D0-4E9B-9961-21C1044A5F2E}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{708B358A-35D0-4E9B-9961-21C1044A5F2E}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{708B358A-35D0-4E9B-9961-21C1044A5F2E}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{708B358A-35D0-4E9B-9961-21C1044A5F2E}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{708B358A-35D0-4E9B-9961-21C1044A5F2E}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{708B358A-35D0-4E9B-9961-21C1044A5F2E}.Release|iPhone.Build.0 = Release|Any CPU
+		{708B358A-35D0-4E9B-9961-21C1044A5F2E}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{708B358A-35D0-4E9B-9961-21C1044A5F2E}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{84BB0D21-7893-42A0-A814-4EFC209A9BAD}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{84BB0D21-7893-42A0-A814-4EFC209A9BAD}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{84BB0D21-7893-42A0-A814-4EFC209A9BAD}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{84BB0D21-7893-42A0-A814-4EFC209A9BAD}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{84BB0D21-7893-42A0-A814-4EFC209A9BAD}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{84BB0D21-7893-42A0-A814-4EFC209A9BAD}.Debug|iPhone.Build.0 = Debug|iPhone
+		{84BB0D21-7893-42A0-A814-4EFC209A9BAD}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{84BB0D21-7893-42A0-A814-4EFC209A9BAD}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{84BB0D21-7893-42A0-A814-4EFC209A9BAD}.Release|iPhone.ActiveCfg = Release|iPhone
+		{84BB0D21-7893-42A0-A814-4EFC209A9BAD}.Release|iPhone.Build.0 = Release|iPhone
+		{84BB0D21-7893-42A0-A814-4EFC209A9BAD}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{84BB0D21-7893-42A0-A814-4EFC209A9BAD}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = DropDown\DropDown.csproj
+	EndGlobalSection
+EndGlobal
