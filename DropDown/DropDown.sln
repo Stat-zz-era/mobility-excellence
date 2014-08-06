@@ -5,6 +5,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropDown", "DropDown\DropDo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchUX", "TouchUX\TouchUX.csproj", "{708B358A-35D0-4E9B-9961-21C1044A5F2E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{198A157A-58F7-4FBC-B826-AB823114A2B4}"
+	ProjectSection(SolutionItems) = preProject
+		DropDownLicense.txt = DropDownLicense.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -39,6 +44,8 @@ Global
 		{84BB0D21-7893-42A0-A814-4EFC209A9BAD}.Release|iPhone.Build.0 = Release|iPhone
 		{84BB0D21-7893-42A0-A814-4EFC209A9BAD}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{84BB0D21-7893-42A0-A814-4EFC209A9BAD}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = DropDown\DropDown.csproj
