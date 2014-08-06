@@ -90,7 +90,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)Exceptions\Exceptions.resx" />
-    <None Include="$(MSBuildThisFileDirectory)SterlingLicense.txt" />
     <None Include="$(MSBuildThisFileDirectory)Wintellect.Sterling.csproj" />
     <None Include="$(MSBuildThisFileDirectory)Wintellect.Sterling.csproj.vspscc" />
   </ItemGroup>

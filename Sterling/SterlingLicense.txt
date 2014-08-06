@@ -1,6 +1,10 @@
-﻿For the latest version of Sterling, visit: 
+﻿For the latest version of the original source code for Sterling from Jeremy Likeness, visit: 
 
 http://sterling.codeplex.com/ 
+
+For the latest version of the Mono version from Statera's Github Repository, visit: 
+
+https://github.com/Statera/mobility-excellence/tree/master/Sterling
 
 Sterling is licensed under the following agreement:
 
