@@ -68,7 +68,7 @@ Method to create and define the properties of the drop down control:
             return ddl;
         }
 
-In the ViewDidLoad method call the custom methods and add the control to the view controller.  The control can be animate from any other event you desire.
+In the ViewDidLoad method call the custom methods and add the control to the view controller.  The control can be animated from any other event you desire.
 
         public override void ViewDidLoad()
         {
