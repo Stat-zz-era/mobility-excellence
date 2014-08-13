@@ -1,8 +1,4 @@
-using System;
 using MonoTouch.UIKit;
-using MonoTouch.CoreGraphics;
-using System.Drawing;
-using System.Linq;
 
 namespace TouchUX
 {

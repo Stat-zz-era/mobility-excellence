@@ -22,6 +22,10 @@ namespace DropDown
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UIBarButtonItem btnOptions { get; set; }
 
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel lblMessage { get; set; }
+
 		void ReleaseDesignerOutlets ()
 		{
 			if (btnChange != null) {
@@ -31,6 +35,10 @@ namespace DropDown
 			if (btnOptions != null) {
 				btnOptions.Dispose ();
 				btnOptions = null;
+			}
+			if (lblMessage != null) {
+				lblMessage.Dispose ();
+				lblMessage = null;
 			}
 		}
 	}

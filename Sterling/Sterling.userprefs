@@ -1,12 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.a197ad22" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sterling.Android.UnitTest/MainActivity.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Google14" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sterling.Common.UnitTest/Database/PersonRespository.cs">
     <Files>
       <File FileName="Sterling.Common.UnitTest/AppDb.cs" Line="1" Column="1" />
       <File FileName="Sterling.IOS.UnitTest/Sterling.IOS.UnitTestViewController.cs" Line="1" Column="1" />
       <File FileName="Sterling.Common.UnitTest/ViewModel/MainViewModel.cs" Line="1" Column="1" />
       <File FileName="Sterling.Common.UnitTest/Model/PersonModel.cs" Line="1" Column="1" />
-      <File FileName="Sterling.Android.UnitTest/MainActivity.cs" Line="48" Column="48" />
+      <File FileName="Sterling.Android.UnitTest/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="Sterling.Common.UnitTest/Database/PersonRespository.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

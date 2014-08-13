@@ -40,7 +40,7 @@ namespace Sterling.Common.UnitTest
                 {
                     var person = (from x in AppDb.Database.Query<PersonModel, int>()
                                                  where  x.LazyValue.Value.Id == id
-                                                 select x).FirstOrDefault(); 
+                        select x).FirstOrDefault(); 
                     return person.LazyValue.Value;
                 });
                                    

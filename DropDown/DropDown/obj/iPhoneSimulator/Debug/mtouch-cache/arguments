@@ -1,16 +1,16 @@
-# Version: 7.2.5.5 (87026b6)
-# [first argument, ignore] # /Users/Les/Desktop/DropDown/DropDown/bin/iPhoneSimulator/Debug/mtouch.exe
+# Version: 7.2.6.28 (606f31a)
+# [first argument, ignore] # /Users/Les/mobility-excellence/DropDown/DropDown/bin/iPhoneSimulator/Debug/mtouch.exe
 /Developer/MonoTouch/usr/bin/mtouch \
 	-sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
 	--cache \
-	/Users/Les/Desktop/DropDown/DropDown/obj/iPhoneSimulator/Debug/mtouch-cache \
+	/Users/Les/mobility-excellence/DropDown/DropDown/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--nomanifest \
 	--nosign \
 	-sim \
-	/Users/Les/Desktop/DropDown/DropDown/bin/iPhoneSimulator/Debug/DropDown.app \
+	/Users/Les/mobility-excellence/DropDown/DropDown/bin/iPhoneSimulator/Debug/DropDown.app \
 	-r \
-	/Users/Les/Desktop/DropDown/TouchUX/bin/Debug/TouchUX.dll \
+	/Users/Les/mobility-excellence/DropDown/TouchUX/bin/Debug/TouchUX.dll \
 	-r \
 	/Developer/MonoTouch/usr/lib/mono/2.1/System.dll \
 	-r \
@@ -26,4 +26,4 @@
 	-targetver \
 	7.0 \
 	--abi=i386 \
-	/Users/Les/Desktop/DropDown/DropDown/bin/iPhoneSimulator/Debug/DropDown.exe \
+	/Users/Les/mobility-excellence/DropDown/DropDown/bin/iPhoneSimulator/Debug/DropDown.exe \

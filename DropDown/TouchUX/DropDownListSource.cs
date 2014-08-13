@@ -1,4 +1,3 @@
-using System;
 using MonoTouch.UIKit;
 using MonoTouch.CoreGraphics;
 using System.Drawing;
@@ -10,7 +9,7 @@ namespace TouchUX
 	internal class DropDownListSource: UITableViewSource
 	{
 		private DropDownListItem[] m_ListItems;
-		private string m_CellIdentifier="DropDownListCell";
+		private const string m_CellIdentifier="DropDownListCell";
 		public event DropDownListChangedHandler DropDownListChanged;
 		private UIColor m_TextColor;
 		private UIColor m_CellColor;
@@ -104,7 +103,7 @@ namespace TouchUX
 			var oldItem = m_ListItems.FirstOrDefault (x => x.IsSelected);
 			if (oldItem != null)
 				oldItem.IsSelected = false;
-			var oldCell = tableView.VisibleCells.Where (c => ((UITableViewCell)c).Accessory == UITableViewCellAccessory.Checkmark).FirstOrDefault() as UITableViewCell;
+            var oldCell = tableView.VisibleCells.FirstOrDefault (c => ((UITableViewCell)c).Accessory == UITableViewCellAccessory.Checkmark) as UITableViewCell;
 			if(oldCell!=null)
 				oldCell.Accessory = UITableViewCellAccessory.None;
 
