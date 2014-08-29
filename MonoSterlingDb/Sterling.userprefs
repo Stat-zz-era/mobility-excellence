@@ -1,12 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Google14" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sterling.Common.UnitTest/Database/PersonRespository.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina4.7.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sterling.Common.UnitTest/ViewModel/MainViewModel.cs">
     <Files>
-      <File FileName="Sterling.IOS.UnitTest/Sterling.IOS.UnitTestViewController.cs" Line="50" Column="50" />
-      <File FileName="Sterling.Common.UnitTest/ViewModel/MainViewModel.cs" Line="10" Column="10" />
-      <File FileName="Sterling.Common.UnitTest/Database/PersonRespository.cs" Line="10" Column="10" />
-      <File FileName="Sterling.Common.UnitTest/Database/AppDatabase.cs" Line="6" Column="6" />
-      <File FileName="Sterling.Common.UnitTest/AppDb.cs" Line="1" Column="1" />
+      <File FileName="Sterling.Common.UnitTest/Database/PersonRespository.cs" Line="1" Column="1" />
+      <File FileName="Sterling.Common.UnitTest/ViewModel/MainViewModel.cs" Line="64" Column="64" />
+      <File FileName="Sterling.IOS.UnitTest/Sterling.IOS.UnitTestViewController.cs" Line="53" Column="53" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

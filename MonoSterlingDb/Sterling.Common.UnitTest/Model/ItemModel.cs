@@ -6,7 +6,7 @@ namespace Sterling.Common.UnitTest
     public class ItemModel:INotifyPropertyChanged
     {
         private int _id;
-
+       
         public int Id
         {
             get { return _id; }

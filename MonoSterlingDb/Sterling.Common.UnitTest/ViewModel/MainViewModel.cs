@@ -10,49 +10,20 @@ namespace Sterling.Common.UnitTest
     public class MainViewModel : INotifyPropertyChanged
     {
         private PersonRespository pr;
-        private ItemRespository ir;
+        private DbRepository<ItemModel> ir;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public ObservableCollection<ItemModel> Items { get; private set; }
+
+        public ObservableCollection<PersonModel> People { get; private set; }
 
         public MainViewModel()
         {
             this.Items = new ObservableCollection<ItemModel>();
             People = new ObservableCollection<PersonModel>();
             pr = new PersonRespository();
-            ir = new ItemRespository();
-        }
-
-        /// <summary>
-        /// A collection for ItemViewModel objects.
-        /// </summary>
-        public ObservableCollection<ItemModel> Items { get; private set; }
-
-        public ObservableCollection<PersonModel> People { get; private set; }
-
-        private string _sampleProperty = "Sample Runtime Property Value";
-
-        /// <summary>
-        /// Sample ViewModel property; this property is used in the view to display its value using a Binding
-        /// </summary>
-        /// <returns></returns>
-        public string SampleProperty
-        {
-            get
-            {
-                return _sampleProperty;
-            }
-            set
-            {
-                if (value != _sampleProperty)
-                {
-                    _sampleProperty = value;
-                    NotifyPropertyChanged("SampleProperty");
-                }
-            }
-        }
-
-        public bool IsDataLoaded
-        {
-            get;
-            private set;
+            ir = new DbRepository<ItemModel>();
         }
 
         public bool DataExists()
@@ -66,9 +37,6 @@ namespace Sterling.Common.UnitTest
             return hasKeys;
         }
 
-        /// <summary>
-        /// Creates and adds a few ItemViewModel objects into the Items collection.
-        /// </summary>
         public async Task<bool> LoadData()
         {
             try
@@ -79,17 +47,16 @@ namespace Sterling.Common.UnitTest
                 {
                     Console.WriteLine("Database has not been initialized");
                     await _SetupData();
-                    IsDataLoaded = true;
                 }
 
-                var items = await ir.GetAllItems();
+                var items = await ir.GetAll();
                 foreach (var item in items)
                 {
                     Items.Add(item);
                 }
 
 
-                var list = await pr.GetAllPeoeple();
+                var list = await pr.GetAll();
                 foreach (var person in list)
                 {
                     People.Add(person);
@@ -103,16 +70,6 @@ namespace Sterling.Common.UnitTest
                 return false;
             }
 
-        }
-
-        public async void GetAllPeople()
-        {
-            var list = await pr.GetAllPeoeple();
-            foreach (var person in list)
-            {
-                var x = person;
-
-            }
         }
 
         private async Task<bool> _SetupData()
@@ -131,8 +88,6 @@ namespace Sterling.Common.UnitTest
                 
             };
             var result = await pr.SaveCollection(personData);
-   
-
             var sampleData = new List<ItemModel>()
             {
                 new ItemModel() { LineOne = "runtime one", LineTwo = "Maecenas praesent accumsan bibendum", LineThree = "Facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat pulvinar sagittis senectus sociosqu" },
@@ -154,13 +109,9 @@ namespace Sterling.Common.UnitTest
             };
 
             result = await ir.SaveCollection(sampleData);
-
-
-            return true;
+            return result;
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
+          
         private void NotifyPropertyChanged(String propertyName)
         {
             PropertyChangedEventHandler handler = PropertyChanged;

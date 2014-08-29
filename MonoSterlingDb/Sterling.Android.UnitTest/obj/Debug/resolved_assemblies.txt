@@ -1,2 +1,2 @@
-/Users/Les/mobility-excellence/Sterling/Sterling.Android.UnitTest/bin/Debug/Sterling.Android.UnitTest.dll
-/Users/Les/mobility-excellence/Sterling/Sterling.Android/bin/Debug/Sterling.Android.dll
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/bin/Debug/Sterling.Android.UnitTest.dll
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android/bin/Debug/Sterling.Android.dll

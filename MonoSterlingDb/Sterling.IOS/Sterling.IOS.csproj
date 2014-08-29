@@ -38,7 +38,6 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="..\Sterling.Common\Sterling.Common.projitems" Label="Shared" Condition="Exists('..\Sterling.Common\Sterling.Common.projitems')" />
