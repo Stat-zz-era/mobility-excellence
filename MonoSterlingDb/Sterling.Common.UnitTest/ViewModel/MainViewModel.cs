@@ -10,7 +10,8 @@ namespace Sterling.Common.UnitTest
     public class MainViewModel : INotifyPropertyChanged
     {
         private PersonRespository pr;
-        private DbRepository<ItemModel> ir;
+        private DbRepository<ItemModel,int> ir;
+        private DbRepository<Order,Guid> or;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -18,23 +19,22 @@ namespace Sterling.Common.UnitTest
 
         public ObservableCollection<PersonModel> People { get; private set; }
 
+        public ObservableCollection<Order> Orders { get; private set; }
+
         public MainViewModel()
         {
+            AppDb.Init();
             this.Items = new ObservableCollection<ItemModel>();
             People = new ObservableCollection<PersonModel>();
+            Orders = new ObservableCollection<Order>();
             pr = new PersonRespository();
-            ir = new DbRepository<ItemModel>();
+            ir = new DbRepository<ItemModel,int>(AppDb.Database);
+            or = new DbRepository<Order,Guid>(AppDb.Database);
         }
 
         public bool DataExists()
         {
-            bool hasKeys = false;
-            foreach (var item in AppDb.Database.Query<PersonModel, int>())
-            {
-                hasKeys = true;
-                break;
-            }
-            return hasKeys;
+            return AppDb.Database.Query<PersonModel, int>().Any();
         }
 
         public async Task<bool> LoadData()
@@ -62,6 +62,14 @@ namespace Sterling.Common.UnitTest
                     People.Add(person);
 
                 }
+
+                //Test select by Id
+                var obj = await pr.GetById(4);
+                //Test custom select contains
+                var obj1 = await pr.GetNameContains("Homes");
+
+                //Test getting collection with GUID as primary key
+                var orderList = await or.GetAll();
 
                 return true;
             }
@@ -109,9 +117,19 @@ namespace Sterling.Common.UnitTest
             };
 
             result = await ir.SaveCollection(sampleData);
+
+            var orderDat = new List<Order>()
+            {
+                new Order(){ Description = "Cars", TimeStamp = DateTime.Now },
+                new Order(){ Description = "Planes", TimeStamp = DateTime.Now },
+                new Order(){ Description = "Boats", TimeStamp = DateTime.Now },
+                new Order(){ Description = "Trains", TimeStamp = DateTime.Now },
+            };
+            result = await or.SaveCollection(orderDat);
+
             return result;
         }
-          
+
         private void NotifyPropertyChanged(String propertyName)
         {
             PropertyChangedEventHandler handler = PropertyChanged;

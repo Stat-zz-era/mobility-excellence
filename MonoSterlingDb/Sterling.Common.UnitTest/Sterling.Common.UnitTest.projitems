@@ -14,8 +14,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\PersonModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\AppDatabase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\PersonRespository.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AppDb.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Database\DbRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Order.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />

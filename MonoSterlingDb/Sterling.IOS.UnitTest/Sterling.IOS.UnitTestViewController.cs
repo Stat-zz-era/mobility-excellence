@@ -19,8 +19,7 @@ namespace Sterling.IOS.UnitTest
             base.ViewDidLoad();
             vm = new MainViewModel();
             InitController();
-
-           
+   
         }
 
         private async void InitController()

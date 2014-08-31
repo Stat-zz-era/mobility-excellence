@@ -77,6 +77,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)IsolatedStorage\IsolatedStorageDriver.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IsolatedStorage\PathLock.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IsolatedStorage\PathProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Database\" />
