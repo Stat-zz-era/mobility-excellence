@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ReactiveWeather.Shared", "ReactiveWeather.Shared\ReactiveWeather.Shared.shproj", "{0063FF90-8126-4930-9B39-818D82014B03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveWeather.IOS", "ReactiveWeather.IOS\ReactiveWeather.IOS.csproj", "{A2994EB5-3F91-48C2-86D7-0A13E8F36324}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveWeather.Android", "ReactiveWeather.Android\ReactiveWeather.Android.csproj", "{79009DC3-74ED-493B-B36D-97E5A70BEB5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.PCL", "Common.PCL\Common.PCL.csproj", "{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.Release|iPhone.Build.0 = Release|Any CPU
+		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Debug|iPhone.Build.0 = Debug|iPhone
+		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Release|iPhone.ActiveCfg = Release|iPhone
+		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Release|iPhone.Build.0 = Release|iPhone
+		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.Release|iPhone.Build.0 = Release|Any CPU
+		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ReactiveWeather.IOS\ReactiveWeather.IOS.csproj
+	EndGlobalSection
+EndGlobal
