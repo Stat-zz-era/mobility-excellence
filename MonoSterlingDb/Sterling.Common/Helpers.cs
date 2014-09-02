@@ -107,7 +107,7 @@ namespace Sterling.Common
         private long _nextId;
         private string _primaryKey;
 
-        public LongTrigger(int nextId, string primaryKey)
+        public LongTrigger(long nextId, string primaryKey)
         {
             _nextId = nextId;
             _primaryKey = primaryKey;
@@ -223,8 +223,8 @@ namespace Sterling.Common
         public static long GetLongIndex<T>(this ISterlingDatabaseInstance database)where T:class, new()
         {
             var idx =
-                database.Query<T, int>().Any() ?
-            (from id in database.Query<T, int>()
+                database.Query<T, long>().Any() ?
+            (from id in database.Query<T, long>()
                          select id.Key).Max() + 1 : 1;
             return idx;
         }

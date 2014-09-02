@@ -12,6 +12,7 @@ namespace Sterling.Common.UnitTest
         private PersonRespository pr;
         private DbRepository<ItemModel,int> ir;
         private DbRepository<Order,Guid> or;
+        private DbRepository<Media,long> mr;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -21,15 +22,19 @@ namespace Sterling.Common.UnitTest
 
         public ObservableCollection<Order> Orders { get; private set; }
 
+        public ObservableCollection<Media> Library { get; private set; }
+
         public MainViewModel()
         {
             AppDb.Init();
             this.Items = new ObservableCollection<ItemModel>();
             People = new ObservableCollection<PersonModel>();
             Orders = new ObservableCollection<Order>();
+            Library = new ObservableCollection<Media>();
             pr = new PersonRespository();
             ir = new DbRepository<ItemModel,int>(AppDb.Database);
             or = new DbRepository<Order,Guid>(AppDb.Database);
+            mr = new DbRepository<Media, long>(AppDb.Database);
         }
 
         public bool DataExists()
@@ -70,6 +75,10 @@ namespace Sterling.Common.UnitTest
 
                 //Test getting collection with GUID as primary key
                 var orderList = await or.GetAll();
+
+                //Test getting collection with Long as primary key
+                var mediaList = await mr.GetAll();
+
 
                 return true;
             }
@@ -126,6 +135,15 @@ namespace Sterling.Common.UnitTest
                 new Order(){ Description = "Trains", TimeStamp = DateTime.Now },
             };
             result = await or.SaveCollection(orderDat);
+
+            var mediaDat = new List<Media>()
+                {
+                    new Media(){ Description = "Records"},
+                    new Media(){ Description = "Magazines"},
+                    new Media(){ Description = "Books" },
+                    new Media(){ Description = "DVDs"},
+                };
+            result = await mr.SaveCollection(mediaDat);
 
             return result;
         }

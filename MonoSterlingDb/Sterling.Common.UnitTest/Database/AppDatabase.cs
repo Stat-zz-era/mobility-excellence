@@ -19,6 +19,7 @@ namespace Sterling.Common.UnitTest
             list.Add(CreateTableDefinition<ItemModel ,int>(i => i.Id));
             list.Add(CreateTableDefinition<PersonModel ,int>(i => i.Id));
             list.Add(CreateTableDefinition<Order ,System.Guid>(i => i.Id));
+            list.Add(CreateTableDefinition<Media ,long>(i => i.Id));
             return list;
         }
     }
@@ -59,6 +60,9 @@ namespace Sterling.Common.UnitTest
 
             var maxPdx = _database.GetIntegerIndex<PersonModel>();
             _database.RegisterTrigger<PersonModel, int>(new IntTrigger<PersonModel>(maxPdx,"Id"));
+
+            var medPdx = _database.GetLongIndex<Media>();
+            _database.RegisterTrigger<Media, long>(new LongTrigger<Media>(medPdx,"Id"));
 
             //Register table with GUID as primary key
             _database.RegisterTrigger<Order, Guid>(new GUIDTrigger<Order>("Id"));
