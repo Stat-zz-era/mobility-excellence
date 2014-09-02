@@ -3,9 +3,9 @@ ReactiveUI Example
 
 This example uses OpenWeatherMap API to display a 7-day forecast based in user input and display the results in a simple list with images. The application demonstrates the following concepts:
 
-- Use of Portable Class Library - HttpClient
-- User of Shared Project - Business Logic (Models & ViewModels)
-- Two-bind data binding
+- Use of a Portable Class Library - HttpClient
+- Use of a Shared Project - Business Logic (Models & ViewModels)
+- Two-way data binding
 - Custom binding classes (Progress indicator)
 - MessageBus
 - Extending the default IOS table Source class to allow binding to SelectedItem in ViewModel

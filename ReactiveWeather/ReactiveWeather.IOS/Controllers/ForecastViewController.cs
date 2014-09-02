@@ -39,9 +39,7 @@ namespace ReactiveWeather.IOS
                 });
             this.Bind(ViewModel, x => x.SelectedInfo, x => x.Source.ItemSelected);
             this.TableView.Source = Source;
-
-
-
+           
         }
             
     }

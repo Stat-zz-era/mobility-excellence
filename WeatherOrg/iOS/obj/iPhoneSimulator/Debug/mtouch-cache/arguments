@@ -1,0 +1,37 @@
+# Version: 7.2.6.28 (606f31a)
+# [first argument, ignore] # /Users/Les/Desktop/Code Camp Oct 2014/WeatherOrg/iOS/bin/iPhoneSimulator/Debug/mtouch.exe
+/Developer/MonoTouch/usr/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	"/Users/Les/Desktop/Code Camp Oct 2014/WeatherOrg/iOS/obj/iPhoneSimulator/Debug/mtouch-cache" \
+	--nomanifest \
+	--nosign \
+	-sim \
+	"/Users/Les/Desktop/Code Camp Oct 2014/WeatherOrg/iOS/bin/iPhoneSimulator/Debug/WeatherOrgiOS.app" \
+	-r \
+	"/Users/Les/Desktop/Code Camp Oct 2014/WeatherOrg/Common.PCL/bin/Debug/Common.PCL.dll" \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/monotouch.dll \
+	-r \
+	"/Users/Les/Desktop/Code Camp Oct 2014/WeatherOrg/packages/Xamarin.Forms.1.2.2.6243/lib/MonoTouch10/Xamarin.Forms.Platform.iOS.dll" \
+	-r \
+	"/Users/Les/Desktop/Code Camp Oct 2014/WeatherOrg/packages/Xamarin.Forms.1.2.2.6243/lib/MonoTouch10/Xamarin.Forms.Core.dll" \
+	-r \
+	"/Users/Les/Desktop/Code Camp Oct 2014/WeatherOrg/packages/Xamarin.Forms.1.2.2.6243/lib/MonoTouch10/Xamarin.Forms.Xaml.dll" \
+	-r \
+	"/Users/Les/Desktop/Code Camp Oct 2014/WeatherOrg/packages/Newtonsoft.Json.6.0.4/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll" \
+	-debug \
+	-nolink \
+	-sdk \
+	7.1 \
+	-targetver \
+	7.0 \
+	--abi=i386 \
+	"/Users/Les/Desktop/Code Camp Oct 2014/WeatherOrg/iOS/bin/iPhoneSimulator/Debug/WeatherOrgiOS.exe" \

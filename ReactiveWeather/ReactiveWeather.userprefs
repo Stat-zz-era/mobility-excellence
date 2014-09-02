@@ -1,12 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina4.7.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ReactiveWeather.Android/CustomControls/BindableProgress.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ReactiveWeather.IOS/Controllers/ReactiveWeather.IOSViewController.cs">
     <Files>
-      <File FileName="ReactiveWeather.IOS/Controllers/ForecastViewController.cs" Line="1" Column="1" />
+      <File FileName="ReactiveWeather.IOS/Controllers/ForecastViewController.cs" Line="12" Column="12" />
       <File FileName="ReactiveWeather.IOS/Cells/ForecastCell.cs" Line="1" Column="1" />
       <File FileName="Common.PCL/Http/RestService.cs" Line="1" Column="1" />
       <File FileName="ReactiveWeather.IOS/Controllers/BindableProgress.cs" Line="1" Column="1" />
       <File FileName="ReactiveWeather.Android/CustomControls/BindableProgress.cs" Line="25" Column="25" />
+      <File FileName="ReactiveWeather.Shared/ViewModels/WeatherViewModel.cs" Line="1" Column="1" />
+      <File FileName="ReactiveWeather.Shared/Models/Model.cs" Line="1" Column="1" />
+      <File FileName="ReactiveWeather.IOS/Controllers/ReactiveWeather.IOSViewController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
