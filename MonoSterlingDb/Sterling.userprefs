@@ -3,12 +3,13 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Sterling.Common.UnitTest/Database/AppDatabase.cs">
     <Files>
       <File FileName="Sterling.Common.UnitTest/Database/PersonRespository.cs" Line="1" Column="1" />
-      <File FileName="Sterling.Common.UnitTest/ViewModel/MainViewModel.cs" Line="21" Column="21" />
-      <File FileName="Sterling.Common.UnitTest/Database/AppDatabase.cs" Line="10" Column="10" />
-      <File FileName="Sterling.Common/Helpers.cs" Line="10" Column="10" />
+      <File FileName="Sterling.Common.UnitTest/ViewModel/MainViewModel.cs" Line="1" Column="1" />
+      <File FileName="Sterling.Common.UnitTest/Database/AppDatabase.cs" Line="12" Column="12" />
+      <File FileName="Sterling.Common/Helpers.cs" Line="1" Column="1" />
       <File FileName="Sterling.Common/ISterlingDatabaseInstance.cs" Line="1" Column="1" />
       <File FileName="Sterling.Common.UnitTest/Model/PersonModel.cs" Line="1" Column="1" />
       <File FileName="Sterling.Common/Database/BaseDatabaseInstance.cs" Line="1" Column="1" />
+      <File FileName="Sterling.Common.UnitTest/Model/Order.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
