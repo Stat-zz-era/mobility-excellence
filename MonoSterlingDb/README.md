@@ -20,7 +20,8 @@ https://sites.google.com/site/sterlingdatabase/sterling-user-guide/getting-start
 You essentially need two files to get SterlingDb going.  One file defines the triggers, creates the tables,defines primary keys and inherits from the BaseDatabaseInstance class. The other class initializes the database engine, logging and an instance of your database class mentioned before. The following code example defines a database based on a person model.
 
       public class AppDatabase : BaseDatabaseInstance {
-	//This class is only needed if you want to explicitly define the primary key yourself. Otherwise there are helper classes that can do this
+	//This class is only needed if you want to explicitly define the primary key yourself. 
+        //Otherwise there are helper classes that can do this
         public class PersonTrigger : BaseSterlingTrigger<PersonModel , int>
         {
             private int _nextId;
@@ -101,12 +102,14 @@ You essentially need two files to get SterlingDb going.  One file defines the tr
             (from id in _database.Query<PersonModel, int>()
                 select id.Key).Max() + 1 : 1;
 
-	    //var maxPdx = _database.GetIntegerIndex<PersonModel>(); This is another way to get the same value from an extension class
+            //This is another way to get the same value from an extension class
+	    //var maxPdx = _database.GetIntegerIndex<PersonModel>(); 
 
             //Register using the custom class you defined earlier
             _database.RegisterTrigger<PersonModel, int>(new AppDatabase.PersonTrigger(maxPdx));
 
-	    //OR - you can register without defining a custom class using a pre-Built template trigger passing in the field that is the primary key.
+	    //OR - you can register without defining a custom class using a pre-Built template trigger 
+	    //passing in the field that is the primary key.
             //_database.RegisterTrigger<PersonModel, int>(new IntTrigger<PersonModel>(maxPdx,"Id"));
 
 
