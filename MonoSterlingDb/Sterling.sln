@@ -98,6 +98,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Sterling.IOS.UnitTest\Sterling.IOS.UnitTest.csproj
+		StartupItem = Sterling.Android.UnitTest\Sterling.Android.UnitTest.csproj
 	EndGlobalSection
 EndGlobal
