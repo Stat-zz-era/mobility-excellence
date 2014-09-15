@@ -10,6 +10,7 @@ This example uses OpenWeatherMap API to display a 7-day forecast based in user i
 - MessageBus
 - Extending the default IOS table Source class to allow binding to SelectedItem in ViewModel
 - Use of ReactiveObject Class
+- Use of TestCloud C#
 
 ###Code Example
 
