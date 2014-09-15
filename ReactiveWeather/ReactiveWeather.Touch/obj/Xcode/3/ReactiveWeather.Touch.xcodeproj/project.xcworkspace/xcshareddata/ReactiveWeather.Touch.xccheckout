@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5CD39CFF-44AF-4E50-9099-C494A246C00F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ReactiveWeather.Touch</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E7CA8B80-389F-4DC2-8BEB-8F25558FA226</key>
+		<string>https://github.com/Statera/mobility-excellence.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ReactiveWeather/ReactiveWeather.Touch/obj/Xcode/3/ReactiveWeather.Touch.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E7CA8B80-389F-4DC2-8BEB-8F25558FA226</key>
+		<string>../../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Statera/mobility-excellence.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E7CA8B80-389F-4DC2-8BEB-8F25558FA226</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E7CA8B80-389F-4DC2-8BEB-8F25558FA226</string>
+			<key>IDESourceControlWCCName</key>
+			<string>mobility-excellence</string>
+		</dict>
+	</array>
+</dict>
+</plist>

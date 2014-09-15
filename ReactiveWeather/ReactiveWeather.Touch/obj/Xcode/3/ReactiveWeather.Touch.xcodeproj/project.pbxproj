@@ -1,0 +1,250 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14C9F4DE0000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185B017C0000000000000000 /* UIKit.framework */; };
+		32CE8B730000000000000000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365F98110000000000000000 /* MapKit.framework */; };
+		801F40B00000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9300A900000000000000000 /* Foundation.framework */; };
+		3B6CD6540000000000000000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFDE2F20000000000000000 /* CoreGraphics.framework */; };
+		BFCF45D00000000000000000 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E00FB00000000000000000 /* Default-568h@2x.png */; };
+		21305CF50000000000000000 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24C169930000000000000000 /* Info.plist */; };
+		F5B1DDF00000000000000000 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12EC2A7D0000000000000000 /* Entitlements.plist */; };
+		3D85DEC90000000000000000 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116EB6700000000000000000 /* MainStoryboard.storyboard */; };
+		19DB609D0000000000000000 /* ForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D6C6D3B0000000000000000 /* ForecastCell.xib */; };
+		37DFF7320000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 3B7103D00000000000000000 /* AppDelegate.h */; };
+		15E48DC70000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19759A650000000000000000 /* AppDelegate.m */; };
+		94F701000000000000000000 /* ReactiveWeather_TouchViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = CE07CAE00000000000000000 /* ReactiveWeather_TouchViewController.h */; };
+		392945BB0000000000000000 /* ReactiveWeather_TouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBA52590000000000000000 /* ReactiveWeather_TouchViewController.m */; };
+		190FD42D0000000000000000 /* ForecastViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 1CA0E0CB0000000000000000 /* ForecastViewController.h */; };
+		11BAD7D50000000000000000 /* ForecastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154BE4730000000000000000 /* ForecastViewController.m */; };
+		353272E50000000000000000 /* ForecastCell.h in Sources */ = {isa = PBXBuildFile; fileRef = 38C37F830000000000000000 /* ForecastCell.h */; };
+		2A4C69EF0000000000000000 /* ForecastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD768D0000000000000000 /* ForecastCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12DA52600000000000000000 /* ReactiveWeather.Touch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "ReactiveWeather.Touch.app"; path = "ReactiveWeather.Touch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		185B017C0000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
+		365F98110000000000000000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MapKit.framework"; path = "System/Library/Frameworks/MapKit.framework"; sourceTree = SDKROOT; };
+		B9300A900000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		3EFDE2F20000000000000000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		F8E00FB00000000000000000 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		24C169930000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "Info.plist"; sourceTree = "<group>"; };
+		12EC2A7D0000000000000000 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Entitlements.plist"; path = "Entitlements.plist"; sourceTree = "<group>"; };
+		116EB6700000000000000000 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "MainStoryboard.storyboard"; path = "MainStoryboard.storyboard"; sourceTree = "<group>"; };
+		1D6C6D3B0000000000000000 /* ForecastCell.xib */ = {isa = PBXFileReference; name = "ForecastCell.xib"; path = "ForecastCell.xib"; sourceTree = "<group>"; };
+		3B7103D00000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		19759A650000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+		CE07CAE00000000000000000 /* ReactiveWeather_TouchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ReactiveWeather_TouchViewController.h"; path = "ReactiveWeather_TouchViewController.h"; sourceTree = "<group>"; };
+		3CBA52590000000000000000 /* ReactiveWeather_TouchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ReactiveWeather_TouchViewController.m"; path = "ReactiveWeather_TouchViewController.m"; sourceTree = "<group>"; };
+		1CA0E0CB0000000000000000 /* ForecastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ForecastViewController.h"; path = "ForecastViewController.h"; sourceTree = "<group>"; };
+		154BE4730000000000000000 /* ForecastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ForecastViewController.m"; path = "ForecastViewController.m"; sourceTree = "<group>"; };
+		38C37F830000000000000000 /* ForecastCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ForecastCell.h"; path = "ForecastCell.h"; sourceTree = "<group>"; };
+		2DDD768D0000000000000000 /* ForecastCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ForecastCell.m"; path = "ForecastCell.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34FE4DA70000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C9F4DE0000000000000000 /* UIKit.framework in Frameworks */,
+				32CE8B730000000000000000 /* MapKit.framework in Frameworks */,
+				801F40B00000000000000000 /* Foundation.framework in Frameworks */,
+				3B6CD6540000000000000000 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1517BF350000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				3FB173810000000000000000 /* ReactiveWeather.Touch */,
+				1FCAE50F0000000000000000 /* Frameworks */,
+				A64995B00000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A64995B00000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12DA52600000000000000000 /* ReactiveWeather.Touch.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		1FCAE50F0000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				185B017C0000000000000000 /* UIKit.framework */,
+				365F98110000000000000000 /* MapKit.framework */,
+				B9300A900000000000000000 /* Foundation.framework */,
+				3EFDE2F20000000000000000 /* CoreGraphics.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		3FB173810000000000000000 /* ReactiveWeather.Touch */ = {
+			isa = PBXGroup;
+			children = (
+				3B7103D00000000000000000 /* AppDelegate.h */,
+				F8E00FB00000000000000000 /* Default-568h@2x.png */,
+				12EC2A7D0000000000000000 /* Entitlements.plist */,
+				38C37F830000000000000000 /* ForecastCell.h */,
+				1D6C6D3B0000000000000000 /* ForecastCell.xib */,
+				1CA0E0CB0000000000000000 /* ForecastViewController.h */,
+				24C169930000000000000000 /* Info.plist */,
+				116EB6700000000000000000 /* MainStoryboard.storyboard */,
+				CE07CAE00000000000000000 /* ReactiveWeather_TouchViewController.h */,
+				17C685A40000000000000000 /* Supporting Files */,
+			);
+			name = "ReactiveWeather.Touch";
+			sourceTree = "<group>";
+		};
+		17C685A40000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19759A650000000000000000 /* AppDelegate.m */,
+				2DDD768D0000000000000000 /* ForecastCell.m */,
+				154BE4730000000000000000 /* ForecastViewController.m */,
+				3CBA52590000000000000000 /* ReactiveWeather_TouchViewController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3972E2960000000000000000 /* ReactiveWeather.Touch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 367A7F4C0000000000000000 /* Build configuration list for PBXNativeTarget "ReactiveWeather.Touch" */;
+			buildPhases = (
+				23290E910000000000000000 /* Sources */,
+				34FE4DA70000000000000000 /* Frameworks */,
+				C13AE1C00000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReactiveWeather.Touch";
+			productName = "ReactiveWeather.Touch";
+			productReference = 12DA52600000000000000000 /* ReactiveWeather.Touch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EBFBCBC0000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2BC759720000000000000000 /* Build configuration list for PBXProject "ReactiveWeather.Touch" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1517BF350000000000000000;
+			productRefGroup = A64995B00000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3972E2960000000000000000 /* ReactiveWeather.Touch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C13AE1C00000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCF45D00000000000000000 /* Default-568h@2x.png in Resources */,
+				21305CF50000000000000000 /* Info.plist in Resources */,
+				F5B1DDF00000000000000000 /* Entitlements.plist in Resources */,
+				3D85DEC90000000000000000 /* MainStoryboard.storyboard in Resources */,
+				19DB609D0000000000000000 /* ForecastCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23290E910000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37DFF7320000000000000000 /* AppDelegate.h in Sources */,
+				15E48DC70000000000000000 /* AppDelegate.m in Sources */,
+				94F701000000000000000000 /* ReactiveWeather_TouchViewController.h in Sources */,
+				392945BB0000000000000000 /* ReactiveWeather_TouchViewController.m in Sources */,
+				190FD42D0000000000000000 /* ForecastViewController.h in Sources */,
+				11BAD7D50000000000000000 /* ForecastViewController.m in Sources */,
+				353272E50000000000000000 /* ForecastCell.h in Sources */,
+				2A4C69EF0000000000000000 /* ForecastCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D438B170000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = MonoTouch;
+		};
+		211433980000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "ReactiveWeather.Touch";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoTouch;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BC759720000000000000000 /* Build configuration list for PBXProject "ReactiveWeather.Touch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D438B170000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+		367A7F4C0000000000000000 /* Build configuration list for PBXNativeTarget "ReactiveWeather.Touch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				211433980000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EBFBCBC0000000000000000 /* Project object */;
+}

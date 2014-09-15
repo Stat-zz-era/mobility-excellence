@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ReactiveWeather.Shared", "ReactiveWeather.Shared\ReactiveWeather.Shared.shproj", "{0063FF90-8126-4930-9B39-818D82014B03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveWeather.IOS", "ReactiveWeather.IOS\ReactiveWeather.IOS.csproj", "{A2994EB5-3F91-48C2-86D7-0A13E8F36324}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveWeather.Android", "ReactiveWeather.Android\ReactiveWeather.Android.csproj", "{79009DC3-74ED-493B-B36D-97E5A70BEB5A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.PCL", "Common.PCL\Common.PCL.csproj", "{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveWeather.IOSTestCloud", "ReactiveWeather.IOSTestCloud\ReactiveWeather.IOSTestCloud.csproj", "{66E3E5B2-55E4-4327-959D-22EA2F244F70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveWeather.Touch", "ReactiveWeather.Touch\ReactiveWeather.Touch.csproj", "{E5733F9E-34E0-4029-9C1D-3599BFFE0C09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +21,18 @@ Global
 		AppStore|iPhone = AppStore|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66E3E5B2-55E4-4327-959D-22EA2F244F70}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{66E3E5B2-55E4-4327-959D-22EA2F244F70}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{66E3E5B2-55E4-4327-959D-22EA2F244F70}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{66E3E5B2-55E4-4327-959D-22EA2F244F70}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{66E3E5B2-55E4-4327-959D-22EA2F244F70}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{66E3E5B2-55E4-4327-959D-22EA2F244F70}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{66E3E5B2-55E4-4327-959D-22EA2F244F70}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{66E3E5B2-55E4-4327-959D-22EA2F244F70}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{66E3E5B2-55E4-4327-959D-22EA2F244F70}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{66E3E5B2-55E4-4327-959D-22EA2F244F70}.Release|iPhone.Build.0 = Release|Any CPU
+		{66E3E5B2-55E4-4327-959D-22EA2F244F70}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{66E3E5B2-55E4-4327-959D-22EA2F244F70}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
 		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
 		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.AppStore|iPhone.ActiveCfg = Release|Any CPU
@@ -31,18 +45,6 @@ Global
 		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.Release|iPhone.Build.0 = Release|Any CPU
 		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{79009DC3-74ED-493B-B36D-97E5A70BEB5A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
-		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
-		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
-		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.AppStore|iPhone.Build.0 = AppStore|iPhone
-		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Debug|iPhone.Build.0 = Debug|iPhone
-		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Release|iPhone.ActiveCfg = Release|iPhone
-		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Release|iPhone.Build.0 = Release|iPhone
-		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{A2994EB5-3F91-48C2-86D7-0A13E8F36324}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
 		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
 		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.AppStore|iPhone.ActiveCfg = Release|Any CPU
@@ -55,8 +57,20 @@ Global
 		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.Release|iPhone.Build.0 = Release|Any CPU
 		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{D1CA9998-4207-4CF3-AE59-B83B38CEB2AE}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{E5733F9E-34E0-4029-9C1D-3599BFFE0C09}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{E5733F9E-34E0-4029-9C1D-3599BFFE0C09}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{E5733F9E-34E0-4029-9C1D-3599BFFE0C09}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{E5733F9E-34E0-4029-9C1D-3599BFFE0C09}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{E5733F9E-34E0-4029-9C1D-3599BFFE0C09}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{E5733F9E-34E0-4029-9C1D-3599BFFE0C09}.Debug|iPhone.Build.0 = Debug|iPhone
+		{E5733F9E-34E0-4029-9C1D-3599BFFE0C09}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{E5733F9E-34E0-4029-9C1D-3599BFFE0C09}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{E5733F9E-34E0-4029-9C1D-3599BFFE0C09}.Release|iPhone.ActiveCfg = Release|iPhone
+		{E5733F9E-34E0-4029-9C1D-3599BFFE0C09}.Release|iPhone.Build.0 = Release|iPhone
+		{E5733F9E-34E0-4029-9C1D-3599BFFE0C09}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{E5733F9E-34E0-4029-9C1D-3599BFFE0C09}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = ReactiveWeather.IOS\ReactiveWeather.IOS.csproj
+		StartupItem = ReactiveWeather.Touch\ReactiveWeather.Touch.csproj
 	EndGlobalSection
 EndGlobal

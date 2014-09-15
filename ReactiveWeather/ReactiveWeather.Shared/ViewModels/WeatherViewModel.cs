@@ -46,6 +46,7 @@ namespace ReactiveWeather.Shared
             LoadingMessage = "Loading data...";
             rs = new RestService();
             WeatherResult = new WeatherObject();
+
             SearchWeather.Subscribe(async(x) =>
                 {
                     if (!string.IsNullOrEmpty(Location))
@@ -56,10 +57,25 @@ namespace ReactiveWeather.Shared
                            MessageBus.Current.SendMessage<string>("Message Bus Example Invoked","cityWarning");
                         }
                         var searchUrl = string.Format(baseUrl, Location);
+
+//                        double milliSecondsTotal=0;
+//
+//                        for(int n = 0;n<10;n++){
+//                            var start = DateTime.Now;
+//                            var results = await rs.GetAsync<WeatherObject>(searchUrl);
+//                            var end = DateTime.Now;
+//                            var span = end-start;
+//                            milliSecondsTotal += span.TotalMilliseconds;
+//                        }
+//                        var average = milliSecondsTotal/10;
+//                        Console.WriteLine("*** average time is {0}",average);
+
+
                         WeatherResult = await rs.GetAsync<WeatherObject>(searchUrl);
                         IsLoading = false;
                     }
                 });
+
         }
     }
 }
