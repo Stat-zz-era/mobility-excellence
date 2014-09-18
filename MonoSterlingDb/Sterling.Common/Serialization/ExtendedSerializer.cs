@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using Wintellect.Sterling.Exceptions;
+#if __ANDROID__
+using Android.Runtime;
+#else
+using MonoTouch.Foundation;
+#endif
 
 
 namespace Wintellect.Sterling.Serialization
@@ -9,6 +14,7 @@ namespace Wintellect.Sterling.Serialization
     /// <summary>
     ///     Serializes some extended objects
     /// </summary>
+    [Preserve]
     internal class ExtendedSerializer : BaseSerializer
     {
         private Type currentType=null;
@@ -21,6 +27,7 @@ namespace Wintellect.Sterling.Serialization
         /// <summary>
         ///     Default constructor
         /// </summary>
+        [Preserve]
         public ExtendedSerializer()
         {
             // wire up the serialization pairs 

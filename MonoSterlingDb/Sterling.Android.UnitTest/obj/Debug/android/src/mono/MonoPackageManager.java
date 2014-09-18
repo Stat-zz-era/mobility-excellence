@@ -42,7 +42,8 @@ public class MonoPackageManager {
 						new java.io.File (
 							android.os.Environment.getExternalStorageDirectory (),
 							"Android/data/" + context.getPackageName () + "/files/.__override__").getAbsolutePath (),
-						MonoPackageManager_Resources.Assemblies);
+						MonoPackageManager_Resources.Assemblies,
+						context.getPackageName ());
 				initialized = true;
 			}
 		}
@@ -71,5 +72,5 @@ class MonoPackageManager_Resources {
 	};
 	public static final String[] Dependencies = new String[]{
 	};
-	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_19";
+	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_21";
 }

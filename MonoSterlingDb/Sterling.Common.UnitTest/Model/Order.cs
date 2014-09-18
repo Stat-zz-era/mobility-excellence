@@ -1,6 +1,10 @@
 using System;
 using System.ComponentModel;
-
+#if __ANDROID__
+using Android.Runtime;
+#else
+using MonoTouch.Foundation;
+#endif
 namespace Sterling.Common.UnitTest
 {
     public class Order:INotifyPropertyChanged
@@ -10,6 +14,7 @@ namespace Sterling.Common.UnitTest
         private string description;
         private DateTime timeStamp;
 
+        [Preserve]
         public Guid Id
         {
             get

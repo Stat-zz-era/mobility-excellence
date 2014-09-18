@@ -1,16 +1,25 @@
 using Wintellect.Sterling.Database;
 using Wintellect.Sterling;
-using System.Linq;
 using System;
 using Wintellect.Sterling.IsolatedStorage;
 
+#if __ANDROID__
+using Android.Runtime;
+#else
+using MonoTouch.Foundation;
+#endif
+
 namespace Sterling.Common.UnitTest
 {
-    public class AppDatabase : BaseDatabaseInstance
+    public class DemoDatabase : BaseDatabaseInstance
     {
+        [Preserve]
+        public DemoDatabase(){
+
+        }
         public override string Name
         {
-            get { return "AppDatabase"; }
+            get { return "DemoDatabase"; }
         }
 
         protected override System.Collections.Generic.List<ITableDefinition> RegisterTables()
@@ -53,7 +62,7 @@ namespace Sterling.Common.UnitTest
             _logger = new SterlingDefaultLogger(SterlingLogLevel.Information);
             _engine.Activate();
 
-            _database = _engine.SterlingDatabase.RegisterDatabase<AppDatabase>(new IsolatedStorageDriver());
+            _database = _engine.SterlingDatabase.RegisterDatabase<DemoDatabase>(new IsolatedStorageDriver());
 
             var maxIdx = _database.GetIntegerIndex<ItemModel>();
             _database.RegisterTrigger<ItemModel, int>(new IntTrigger<ItemModel>(maxIdx,"Id"));

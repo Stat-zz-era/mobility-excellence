@@ -1,12 +1,18 @@
 ﻿using System;
 using System.ComponentModel;
-
+#if __ANDROID__
+using Android.Runtime;
+#else
+using MonoTouch.Foundation;
+#endif
 namespace Sterling.Common.UnitTest
 {
     public class Media:INotifyPropertyChanged
     {
         private long id;
         private string description;
+
+        [Preserve]
         public long Id
         {
             get

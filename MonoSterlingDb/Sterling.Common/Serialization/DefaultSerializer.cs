@@ -2,12 +2,18 @@
 using System.Collections.Generic;
 using System.IO;
 using Wintellect.Sterling.Exceptions;
+#if __ANDROID__
+using Android.Runtime;
+#else
+using MonoTouch.Foundation;
+#endif
 
 namespace Wintellect.Sterling.Serialization
 {
     /// <summary>
     ///     Default serializer handles the instances the writer is overloaded for by default
     /// </summary>
+    [Preserve]
     public class DefaultSerializer : BaseSerializer 
     {
         /// <summary>
@@ -19,6 +25,7 @@ namespace Wintellect.Sterling.Serialization
         /// <summary>
         ///     Default constructor
         /// </summary>
+        [Preserve]
         public DefaultSerializer()
         {
             // wire up the serialization pairs 

@@ -1,4 +1,4 @@
-/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android/obj/Debug/MonoAndroid,Version=v4.4.AssemblyAttribute.cs
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android/obj/Debug/MonoAndroid,Version=v4.5.AssemblyAttribute.cs
 /Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android/obj/Debug/Sterling.Android.obj.Debug.__AndroidLibraryProjects__.zip
 /Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android/bin/Debug/Sterling.Android.dll.mdb
 /Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android/bin/Debug/Sterling.Android.dll

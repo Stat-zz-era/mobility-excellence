@@ -1,7 +1,7 @@
 mscorlib.dll
-System.Core.dll
 System.dll
 System.Xml.dll
+System.Core.dll
 Mono.Dynamic.Interpreter.dll
 ReactiveUI.dll
 Splat.dll

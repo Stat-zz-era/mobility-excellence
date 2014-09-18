@@ -1,6 +1,14 @@
 ﻿using System;
 using System.ComponentModel;
 
+
+
+#if __ANDROID__
+using Android.Runtime;
+#else
+using MonoTouch.Foundation;
+#endif
+
 namespace Sterling.Common.UnitTest
 {
     public enum Gender{
@@ -15,6 +23,7 @@ namespace Sterling.Common.UnitTest
         DateTime dOB;
         Gender sex;
 
+        [Preserve]
         public int Id
         {
             get

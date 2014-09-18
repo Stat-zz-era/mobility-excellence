@@ -3,7 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using Wintellect.Sterling.Serialization;
-
+#if __ANDROID__
+using Android.Runtime;
+#else
+using MonoTouch.Foundation;
+#endif
 namespace Wintellect.Sterling.Database
 {
     /// <summary>
@@ -12,7 +16,7 @@ namespace Wintellect.Sterling.Database
     public abstract class BaseDriver : ISterlingDriver
     {
         protected List<string> TypeIndex { get; private set; }
-
+        [Preserve]
         protected BaseDriver()
         {
             TypeIndex = new List<string>();   

@@ -1,5 +1,10 @@
 ﻿using System;
 using System.ComponentModel;
+#if __ANDROID__
+using Android.Runtime;
+#else
+using MonoTouch.Foundation;
+#endif
 
 namespace Sterling.Common.UnitTest
 {
@@ -7,6 +12,7 @@ namespace Sterling.Common.UnitTest
     {
         private int _id;
        
+        [Preserve]
         public int Id
         {
             get { return _id; }

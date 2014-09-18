@@ -1,0 +1,6 @@
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.IOS.UnitTest/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Core.dll
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.IOS.UnitTest/obj/iPhoneSimulator/Debug/mtouch-cache/Link/mscorlib.dll
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.IOS.UnitTest/obj/iPhoneSimulator/Debug/mtouch-cache/Link/monotouch.dll
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.IOS.UnitTest/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Sterling.IOS.dll
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.IOS.UnitTest/obj/iPhoneSimulator/Debug/mtouch-cache/Link/SterlingIOSUnitTest.exe
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.IOS.UnitTest/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.dll

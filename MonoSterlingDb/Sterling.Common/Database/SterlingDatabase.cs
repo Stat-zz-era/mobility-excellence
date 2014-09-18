@@ -11,7 +11,7 @@ namespace Wintellect.Sterling.Database
     ///     The sterling database manager
     /// </summary>
     internal class SterlingDatabase : ISterlingDatabase
-    {        
+    {
         private static bool _activated;
 
         /// <summary>
@@ -33,7 +33,7 @@ namespace Wintellect.Sterling.Database
         {
             _logManager = logger;
         }
-        
+
         /// <summary>
         ///     Registers a logger (multiple loggers may be registered)
         /// </summary>
@@ -75,7 +75,9 @@ namespace Wintellect.Sterling.Database
         {
             _RequiresActivation();
 
-            var databaseQuery = from d in _databases where d.Value.Item1.Equals(typeof (T)) select d.Value.Item2;
+            var databaseQuery = from d in _databases
+                                         where d.Value.Item1.Equals(typeof(T))
+                                         select d.Value.Item2;
             if (!databaseQuery.Any())
             {
                 throw new SterlingDatabaseNotFoundException(typeof(T).FullName);
@@ -90,17 +92,17 @@ namespace Wintellect.Sterling.Database
 
             // now the type master
             writer.Write(typeMaster.Count);
-            foreach(var type in typeMaster)
+            foreach (var type in typeMaster)
             {
                 writer.Write(type);
             }
                         
             // now iterate tables
-            foreach(var table in ((BaseDatabaseInstance)database).TableDefinitions)
+            foreach (var table in ((BaseDatabaseInstance)database).TableDefinitions)
             {                
                 // get the key list
                 var keys = database.Driver.DeserializeKeys(table.Key, table.Value.KeyType,
-                                                           table.Value.GetNewDictionary());                                        
+                               table.Value.GetNewDictionary());                                        
                 
                 // reality check
                 if (keys == null)
@@ -116,12 +118,12 @@ namespace Wintellect.Sterling.Database
                     foreach (var key in keys.Keys)
                     {
                         _serializer.Serialize(key, writer);
-                        writer.Write((int) keys[key]);
+                        writer.Write((int)keys[key]);
 
                         // get the instance 
-                        using (var instance = database.Driver.Load(table.Key, (int) keys[key]))
+                        using (var instance = database.Driver.Load(table.Key, (int)keys[key]))
                         {
-                            var bytes = instance.ReadBytes((int) instance.BaseStream.Length);
+                            var bytes = instance.ReadBytes((int)instance.BaseStream.Length);
                             writer.Write(bytes.Length);
                             writer.Write(bytes);
                         }
@@ -139,10 +141,12 @@ namespace Wintellect.Sterling.Database
         {
             _RequiresActivation();
 
-            var databaseQuery = from d in _databases where d.Value.Item1.Equals(typeof (T)) select d.Value.Item2;
+            var databaseQuery = from d in _databases
+                                         where d.Value.Item1.Equals(typeof(T))
+                                         select d.Value.Item2;
             if (!databaseQuery.Any())
             {
-                throw new SterlingDatabaseNotFoundException(typeof (T).FullName);
+                throw new SterlingDatabaseNotFoundException(typeof(T).FullName);
             }
             var database = databaseQuery.First();
             database.Purge();
@@ -174,7 +178,7 @@ namespace Wintellect.Sterling.Database
                 if (keyDictionary == null)
                 {
                     throw new SterlingException(string.Format("Unable to make dictionary for key type {0}",
-                                                              table.Value.KeyType));
+                            table.Value.KeyType));
                 }
 
                 var keyCount = reader.ReadInt32();
@@ -195,13 +199,14 @@ namespace Wintellect.Sterling.Database
                 table.Value.Refresh();
 
                 // now generate the indexes 
-                if (table.Value.Indexes.Count <= 0) continue;
+                if (table.Value.Indexes.Count <= 0)
+                    continue;
 
                 var table1 = table;
 
                 foreach (var instance in from object key in keyDictionary.Keys select Tuple.Create(key, database.Load(table1.Key, key)))
                 {
-                    foreach(var index in table.Value.Indexes)
+                    foreach (var index in table.Value.Indexes)
                     {
                         index.Value.AddIndex(instance.Item2, instance.Item1);                        
                     }
@@ -227,7 +232,7 @@ namespace Wintellect.Sterling.Database
         /// <typeparam name="TDriver">Register with a driver</typeparam>
         public ISterlingDatabaseInstance RegisterDatabase<T, TDriver>() where T : BaseDatabaseInstance where TDriver : ISterlingDriver
         {
-            var driver = (TDriver) Activator.CreateInstance(typeof (TDriver));
+            var driver = (TDriver)Activator.CreateInstance(typeof(TDriver));
             return RegisterDatabase<T>(driver);
         }
 
@@ -254,12 +259,15 @@ namespace Wintellect.Sterling.Database
                 string.Format("Sterling is registering database {0}", typeof(T)),
                 null);  
             
-            if ((from d in _databases where d.Value.Item1.Equals(typeof(T)) select d).Count() > 0)
+            if ((from d in _databases
+                          where d.Value.Item1.Equals(typeof(T))
+                          select d).Count() > 0)
             {
                 throw new SterlingDuplicateDatabaseException(typeof(T));
             }
-            
-             var database = (ISterlingDatabaseInstance)Activator.CreateInstance(typeof (T));
+
+
+            var database = (ISterlingDatabaseInstance)Activator.CreateInstance(typeof(T));
 
             if (driver == null)
             {
@@ -272,13 +280,13 @@ namespace Wintellect.Sterling.Database
                 driver.Log = _logManager.Log;
             }
             
-            ((BaseDatabaseInstance) database).Serializer = _serializer;
+            ((BaseDatabaseInstance)database).Serializer = _serializer;
 
             ((BaseDatabaseInstance)database).RegisterTypeResolvers();
             ((BaseDatabaseInstance)database).RegisterPropertyConverters();
             
             ((BaseDatabaseInstance)database).PublishTables(driver);
-            _databases.Add(database.Name, new Tuple<Type, ISterlingDatabaseInstance>(typeof(T),database));
+            _databases.Add(database.Name, new Tuple<Type, ISterlingDatabaseInstance>(typeof(T), database));
             return database;
         }
 
@@ -326,8 +334,9 @@ namespace Wintellect.Sterling.Database
             {
                 throw new SterlingActivationException(string.Format("RegisterSerializer<{0}>", typeof(T).FullName));
             }
-
+      
             ((AggregateSerializer)_serializer).AddSerializer((ISterlingSerializer)Activator.CreateInstance(typeof(T)));
+
         }
 
         /// <summary>
@@ -345,7 +354,7 @@ namespace Wintellect.Sterling.Database
         /// </summary>
         public void Activate()
         {
-            lock(Lock)
+            lock (Lock)
             {
                 if (_activated)
                 {
@@ -368,7 +377,7 @@ namespace Wintellect.Sterling.Database
         /// </summary>
         public void Deactivate()
         {
-            lock(Lock)
+            lock (Lock)
             {
                 _activated = false;                
                 _Unload();

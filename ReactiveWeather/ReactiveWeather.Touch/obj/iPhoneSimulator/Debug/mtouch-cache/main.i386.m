@@ -27,3 +27,10 @@ void monotouch_setup ()
 	monotouch_sgen = FALSE;
 }
 
+int main (int argc, char **argv)
+{
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	int rv = monotouch_main (argc, argv, false);
+	[pool drain];
+	return rv;
+}
