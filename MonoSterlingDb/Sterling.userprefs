@@ -1,6 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.8.0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sterling.Common.UnitTest/Database/AppDatabase.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sterling.Common/IsolatedStorage/IsolatedStorageDriver.cs">
     <Files>
       <File FileName="Sterling.Common/Database/BaseDatabaseInstance.cs" Line="1" Column="1" />
       <File FileName="Sterling.Common/Helpers.cs" Line="1" Column="1" />
@@ -11,7 +11,8 @@
       <File FileName="Sterling.Common.UnitTest/Model/Order.cs" Line="1" Column="1" />
       <File FileName="Sterling.Common.UnitTest/Model/Media.cs" Line="1" Column="1" />
       <File FileName="Sterling.Common.UnitTest/Model/ItemModel.cs" Line="1" Column="1" />
-      <File FileName="Sterling.Common.UnitTest/Database/AppDatabase.cs" Line="10" Column="10" />
+      <File FileName="Sterling.Common.UnitTest/Database/AppDatabase.cs" Line="90" Column="90" />
+      <File FileName="Sterling.Common/IsolatedStorage/IsolatedStorageDriver.cs" Line="6" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
