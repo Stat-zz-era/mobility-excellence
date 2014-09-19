@@ -1,6 +1,6 @@
-# Version: 8.0.0.60 (b26679f)
+# Version: 8.0.0.62 (8bd8158)
 # [first argument, ignore] # /Users/Les/mobility-excellence/MonoSterlingDb/Sterling.IOS.UnitTest/bin/iPhoneSimulator/Debug/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/8.0.0.60/bin/mtouch \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.0.0.62/bin/mtouch \
 	-sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
 	--cache \
@@ -25,6 +25,7 @@
 	-sdk \
 	8.0 \
 	-targetver \
-	8.0 \
+	7.1 \
 	--abi=i386 \
+	--linkskip=Sterling.IOS \
 	/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.IOS.UnitTest/bin/iPhoneSimulator/Debug/SterlingIOSUnitTest.exe \

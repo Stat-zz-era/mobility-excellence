@@ -7,6 +7,7 @@ using MonoTouch.Foundation;
 #endif
 namespace Sterling.Common.UnitTest
 {
+    [Preserve(AllMembers = true)]
     public class Order:INotifyPropertyChanged
     {
 
@@ -14,7 +15,6 @@ namespace Sterling.Common.UnitTest
         private string description;
         private DateTime timeStamp;
 
-        [Preserve]
         public Guid Id
         {
             get

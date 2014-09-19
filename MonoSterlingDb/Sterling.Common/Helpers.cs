@@ -13,6 +13,8 @@ namespace Sterling.Common
     {
         private ISterlingDatabaseInstance _database;
 
+        public Exception CurrentException{ get; set; }
+
         public DbRepository(ISterlingDatabaseInstance database)
         {
             _database = database;
@@ -27,29 +29,53 @@ namespace Sterling.Common
         {
             return await Task.Run(() =>
                 {
-                    return _database.Query<T, K>().ToGenericList();
+                    try
+                    {
+                        return _database.Query<T, K>().ToGenericList();
+                    }
+                    catch (Exception ex)
+                    {
+                        CurrentException = ex;
+                        return null;
+                    }
                 });
 
         }
 
         public async Task<T> GetById(K id)
         {
-            var obj = (from x in _database.Query<T, K>()
-                                where x.Key.Equals(id)
-                                select x).FirstOrDefault();
-            if (obj != null)
-                return obj.LazyValue.Value;
-            else
+            try
+            {
+                var obj = (from x in _database.Query<T, K>()
+                                       where x.Key.Equals(id)
+                                       select x).FirstOrDefault();
+                if (obj != null)
+                    return obj.LazyValue.Value;
+                else
+                    return null;
+            }
+            catch (Exception ex)
+            {
+                CurrentException = ex;
                 return null;
+            }
         }
 
         public async Task<bool> Delete(T obj)
         {
             return await Task.Run(() =>
                 {
-                    _database.Delete(obj);
-                    _database.Flush();
-                    return true;
+                    try
+                    {
+                        _database.Delete(obj);
+                        _database.Flush();
+                        return true;
+                    }
+                    catch (Exception ex)
+                    {
+                        CurrentException = ex;
+                        return false;
+                    }
                 });
         }
 
@@ -75,9 +101,17 @@ namespace Sterling.Common
         {
             return await Task.Run(() =>
                 {
-                    _database.Save(obj);
-                    _database.Flush();
-                    return true;
+                    try
+                    {
+                        _database.Save(obj);
+                        _database.Flush();
+                        return true;
+                    }
+                    catch (Exception ex)
+                    {
+                        CurrentException = ex;
+                        return false;
+                    }
                 });
         }
 
@@ -90,15 +124,25 @@ namespace Sterling.Common
                     bw.RunWorkerCompleted += (e, a) =>
                     {
                         if (a.Error == null)
+                        {
                             tcs.TrySetResult(true);
+                        }
                         else
+                        {
+                            CurrentException = a.Error;
                             tcs.TrySetResult(false);
+                        }
 
                         _database.Flush();
                     };
                     bw.RunWorkerAsync();
                     return tcs.Task;
                 });
+        }
+
+        public void ClearException()
+        {
+            CurrentException = null;
         }
     }
 

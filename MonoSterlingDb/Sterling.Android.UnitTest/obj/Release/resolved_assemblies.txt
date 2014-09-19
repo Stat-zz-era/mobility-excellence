@@ -1,0 +1,7 @@
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/bin/Release/Sterling.Android.UnitTest.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/System.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/System.Xml.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v4.5/Mono.Android.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/System.Core.dll
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android/bin/Release/Sterling.Android.dll
+/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/mscorlib.dll

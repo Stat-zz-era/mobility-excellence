@@ -11,9 +11,9 @@ using MonoTouch.Foundation;
 
 namespace Sterling.Common.UnitTest
 {
+    [Preserve(AllMembers = true)]
     public class DemoDatabase : BaseDatabaseInstance
     {
-        [Preserve]
         public DemoDatabase(){
 
         }

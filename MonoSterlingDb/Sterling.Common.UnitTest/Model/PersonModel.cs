@@ -15,6 +15,7 @@ namespace Sterling.Common.UnitTest
         Male,
         Female
     }
+    [Preserve(AllMembers = true)]
     public class PersonModel: INotifyPropertyChanged
     {
         int id; 
@@ -23,7 +24,6 @@ namespace Sterling.Common.UnitTest
         DateTime dOB;
         Gender sex;
 
-        [Preserve]
         public int Id
         {
             get

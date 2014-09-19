@@ -1,0 +1,15 @@
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/obj/Release/MonoAndroid,Version=v4.5.AssemblyAttribute.cs
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/bin/Release/Sterling.Android.UnitTest.dll.mdb
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/bin/Release/Sterling.Android.UnitTest.dll
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/bin/Release/Sterling.Android.UnitTest.apk
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/obj/Release/android/bin/Sterling.Android.UnitTest.apk
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/obj/Release/res/layout/main.xml
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/obj/Release/res/values/strings.xml
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/obj/Release/res/drawable/icon.png
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/obj/Release/R.cs.flag
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/bin/Release/Sterling.Android.UnitTest-Signed.apk
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/obj/Release/uploadflags.txt
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/obj/Release/Sterling.Android.UnitTest.dll
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/obj/Release/Sterling.Android.UnitTest.dll.mdb
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/bin/Release/Sterling.Android.dll
+/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.Android.UnitTest/bin/Release/Sterling.Android.dll.mdb

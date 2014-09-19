@@ -8,11 +8,11 @@ using MonoTouch.Foundation;
 
 namespace Sterling.Common.UnitTest
 {
+    [Preserve(AllMembers = true)]
     public class ItemModel:INotifyPropertyChanged
     {
         private int _id;
        
-        [Preserve]
         public int Id
         {
             get { return _id; }

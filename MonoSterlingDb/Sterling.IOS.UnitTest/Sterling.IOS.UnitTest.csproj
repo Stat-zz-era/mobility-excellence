@@ -25,6 +25,9 @@
     </MtouchI18n>
     <MtouchArch>i386</MtouchArch>
     <MtouchLink>Full</MtouchLink>
+    <MtouchSdkVersion>8.0</MtouchSdkVersion>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchExtraArgs>--linkskip=Sterling.IOS</MtouchExtraArgs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>

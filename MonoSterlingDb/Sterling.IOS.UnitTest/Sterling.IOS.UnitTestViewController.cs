@@ -4,6 +4,13 @@ using Sterling.Common.UnitTest;
 
 namespace Sterling.IOS.UnitTest
 {
+    /*
+    When deploying to release...use build option of link all assemblies. Keep in mind that all domain
+    objects will have to be marked with [Preserve(AllMembers = true)] as well as the database file that 
+    inherits from BaseDatabaseInstance.
+    In the additional mtouch arguments in the linker section add --linkskip=Sterling.IOS
+    http://blog.xamarin.com/howto-partially-linking-monotouch-applications/
+    */
     public partial class Sterling_IOS_UnitTestViewController : UIViewController
     {
         private MainViewModel vm;

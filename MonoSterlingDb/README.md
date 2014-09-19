@@ -7,6 +7,8 @@ On a recent project we experienced some issue using SQLite. Problems included th
 
 I found out on codeplex a great project by Jeremy Likeness with source using IsolatedStorage in Windows Phone.  I decided that this would be a great project to migrate into Mono for iOS and Android. I tested this solution in an existing project that experienced issues with SQLite and it worked like a dream.
 
+In the Sterling_IOS_UnitTestViewController of IOS and MainActivity of Android test projects there are additional comments describing how to deploy to release with the setting of link all assemblies.  By the way, this setting reduces and optimizes your application significantly.
+
 Please give Jeremy the credit and observe the Microsoft Public License (Ms-PL). Source is here with examples so you can make any modifications needed to suit your needs. The original project can be found at:
 
 http://sterling.codeplex.com/

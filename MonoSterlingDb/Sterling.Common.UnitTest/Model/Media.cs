@@ -7,12 +7,12 @@ using MonoTouch.Foundation;
 #endif
 namespace Sterling.Common.UnitTest
 {
+    [Preserve(AllMembers = true)]
     public class Media:INotifyPropertyChanged
     {
         private long id;
         private string description;
 
-        [Preserve]
         public long Id
         {
             get

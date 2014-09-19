@@ -1,0 +1,30 @@
+# Version: 8.0.0.62 (8bd8158)
+# [first argument, ignore] # /Users/Les/mobility-excellence/MonoSterlingDb/Sterling.IOS.UnitTest/bin/iPhoneSimulator/Release/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.0.0.62/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.IOS.UnitTest/obj/iPhoneSimulator/Release/mtouch-cache \
+	--nomanifest \
+	--nosign \
+	-sim \
+	/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.IOS.UnitTest/bin/iPhoneSimulator/Release/SterlingIOSUnitTest.app \
+	-r \
+	/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.IOS/bin/Release/Sterling.IOS.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/monotouch.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/Mono.CSharp.dll \
+	-nolink \
+	-sdk \
+	8.0 \
+	-targetver \
+	8.0 \
+	--abi=i386 \
+	/Users/Les/mobility-excellence/MonoSterlingDb/Sterling.IOS.UnitTest/bin/iPhoneSimulator/Release/SterlingIOSUnitTest.exe \
