@@ -28,8 +28,6 @@
 	-r \
 	/Users/Les/mobility-excellence/ReactiveWeather/packages/Rx-PlatformServices.2.2.5/lib/portable-windows8+net45+wp8/System.Reactive.PlatformServices.dll \
 	-r \
-	/Users/Les/mobility-excellence/ReactiveWeather/packages/Splat.1.5.0/lib/monotouch/Splat.dll \
-	-r \
 	/Users/Les/mobility-excellence/ReactiveWeather/packages/Newtonsoft.Json.6.0.5/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Net.Http.dll \
@@ -38,7 +36,9 @@
 	-r \
 	/Users/Les/mobility-excellence/ReactiveWeather/Components/calabash-10.0/lib/ios/Calabash.dll \
 	-r \
-	/Users/Les/mobility-excellence/ReactiveWeather/packages/reactiveui-core.6.0.7/lib/Monotouch/ReactiveUI.dll \
+	/Users/Les/mobility-excellence/ReactiveWeather/packages/reactiveui-core.6.1.0/lib/Monotouch/ReactiveUI.dll \
+	-r \
+	/Users/Les/mobility-excellence/ReactiveWeather/packages/Splat.1.5.1/lib/monotouch/Splat.dll \
 	-debug \
 	-nolink \
 	-sdk \
