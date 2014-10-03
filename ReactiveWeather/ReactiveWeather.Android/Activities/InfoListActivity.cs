@@ -67,9 +67,9 @@ namespace ReactiveWeather.Android
     }
     public class RxAdapter<T>: ReactiveListAdapter<T>,INotifyPropertyChanged where T:class
     {
-        private Info itemSelected;
+        private T itemSelected;
         public event PropertyChangedEventHandler PropertyChanged;
-        public Info ItemSelected
+        public T ItemSelected
         {
             get { return itemSelected; }
             set { itemSelected = value; PropertyNotify("ItemSelected"); }
@@ -81,13 +81,14 @@ namespace ReactiveWeather.Android
 
         }
         public void RegisterItemClientArgs(object sender, AdapterView.ItemClickEventArgs args){
-            ItemSelected = this.GetItem(args.Position).Cast<Info>();
+            ItemSelected = this.GetItem(args.Position).Cast<T>();
         }
 
         private void PropertyNotify(string propName){
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(propName));
         }
+            
     }
     public static class ObjectTypeHelper
     {
