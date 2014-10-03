@@ -1,6 +1,0 @@
-/Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.IOSTestCloud/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
-/Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.IOSTestCloud/bin/Debug/ReactiveWeather.IOSTestCloud.dll.mdb
-/Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.IOSTestCloud/bin/Debug/ReactiveWeather.IOSTestCloud.dll
-/Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.IOSTestCloud/obj/Debug/ReactiveWeather.IOSTestCloud.dll
-/Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.IOSTestCloud/obj/Debug/ReactiveWeather.IOSTestCloud.dll.mdb
-/Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.IOSTestCloud/bin/Debug/Xamarin.UITest.dll

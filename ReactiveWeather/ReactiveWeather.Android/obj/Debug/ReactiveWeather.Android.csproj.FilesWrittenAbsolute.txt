@@ -18,8 +18,8 @@
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Android/bin/Debug/System.Reactive.Linq.dll
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Android/bin/Debug/System.Reactive.PlatformServices.dll
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Android/bin/Debug/Newtonsoft.Json.dll
-/Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Android/bin/Debug/Splat.dll
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Android/bin/Debug/ReactiveUI.dll
+/Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Android/bin/Debug/Splat.dll
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Android/bin/Debug/Common.PCL.dll
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Android/bin/Debug/Common.PCL.dll.mdb
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Android/bin/Debug/ModernHttpClient.dll

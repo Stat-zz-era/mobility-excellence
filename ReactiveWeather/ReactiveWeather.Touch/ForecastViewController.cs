@@ -1,7 +1,6 @@
 using System;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
-using System.CodeDom.Compiler;
 using ReactiveUI;
 using ReactiveWeather.Shared;
 
@@ -32,9 +31,13 @@ namespace ReactiveWeather.Touch
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-
+            this.NavigationItem.SetRightBarButtonItem(
+                new UIBarButtonItem(UIBarButtonSystemItem.Action, (sender,args) => {
+                    ViewModel.DynamicAdd.Execute(null);
+                })
+                , true);
             TableView.RegisterNibForCellReuse(ForecastCell.Nib, ForecastCell.Key);
-            Source = new RxTableSource<Info>(this.TableView, ViewModel.WeatherResult.list, ForecastCell.Key, 50.0f, cell =>
+            Source = new RxTableSource<Info>(this.TableView, ViewModel.WeatherResult.InfoList, ForecastCell.Key, 50.0f, cell =>
                 {
 
                 });

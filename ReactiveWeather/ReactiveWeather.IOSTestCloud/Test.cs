@@ -37,8 +37,6 @@ namespace ReactiveWeather.IOSTestCloud
         public void TestCase()
         {
             app.Screenshot("Initial Page");
-         
-
             app.EnterText(c => c.Id("txtLocation"),"Gilbert,az");
             app.Screenshot("Capture Input");
             app.Tap(c => c.Id("btnSearch"));

@@ -1,15 +1,26 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5.8.0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sterling.IOS.UnitTest/Sterling.IOS.UnitTestViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sterling.Android.UnitTest/PhoneTableAdapter.cs">
     <Files>
-      <File FileName="Sterling.Common.UnitTest/Model/ItemModel.cs" Line="5" Column="5" />
+      <File FileName="Sterling.Common.UnitTest/Model/ItemModel.cs" Line="1" Column="1" />
       <File FileName="Sterling.Common.UnitTest/Model/Media.cs" Line="1" Column="1" />
       <File FileName="Sterling.Common.UnitTest/Model/Order.cs" Line="1" Column="1" />
-      <File FileName="Sterling.Common.UnitTest/Model/PersonModel.cs" Line="22" Column="22" />
-      <File FileName="Sterling.Common.UnitTest/Database/AppDatabase.cs" Line="31" Column="31" />
-      <File FileName="Sterling.IOS.UnitTest/Sterling.IOS.UnitTestViewController.cs" Line="30" Column="30" />
-      <File FileName="Sterling.Android.UnitTest/MainActivity.cs" Line="7" Column="7" />
+      <File FileName="Sterling.Common.UnitTest/Model/PersonModel.cs" Line="1" Column="1" />
+      <File FileName="Sterling.Common.UnitTest/Database/AppDatabase.cs" Line="1" Column="1" />
+      <File FileName="Sterling.IOS.UnitTest/Sterling.IOS.UnitTestViewController.cs" Line="1" Column="1" />
+      <File FileName="Sterling.Android.UnitTest/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="Sterling.Common.UnitTest/ViewModel/MainViewModel.cs" Line="1" Column="1" />
+      <File FileName="Sterling.Android.UnitTest/PhoneTableAdapter.cs" Line="52" Column="52" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Sterling.Android.UnitTest" expanded="True">
+            <Node name="PhoneTableAdapter.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

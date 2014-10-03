@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina4.7.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WeatherOrg/App.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5.8.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WeatherOrg/Views/Home.cs">
     <Files>
       <File FileName="WeatherOrg/App.cs" Line="1" Column="1" />
-      <File FileName="WeatherOrg/Views/Home.cs" Line="1" Column="1" />
+      <File FileName="WeatherOrg/Views/Home.cs" Line="45" Column="45" />
       <File FileName="WeatherOrg/ViewModels/WeatherViewModel.cs" Line="1" Column="1" />
       <File FileName="WeatherOrg/Views/Forecast.cs" Line="1" Column="1" />
       <File FileName="WeatherOrg/Models/Model.cs" Line="1" Column="1" />

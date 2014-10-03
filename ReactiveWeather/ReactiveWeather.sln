@@ -71,6 +71,10 @@ Global
 		{E5733F9E-34E0-4029-9C1D-3599BFFE0C09}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = ReactiveWeather.Touch\ReactiveWeather.Touch.csproj
+		StartupItem = ReactiveWeather.Android\ReactiveWeather.Android.csproj
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
 	EndGlobalSection
 EndGlobal

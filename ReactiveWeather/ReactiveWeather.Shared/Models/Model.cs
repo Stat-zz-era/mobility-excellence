@@ -67,31 +67,31 @@ namespace ReactiveWeather.Shared
     public class Info:ReactiveObject
     {
         [JsonProperty("dt")]
-        public int dt { get; protected set; }
+        public int dt { get;  set; }
 
         [JsonProperty("temp")]
-        public Temp temp { get; protected set; }
+        public Temp temp { get;  set; }
 
         [JsonProperty("pressure")]
-        public double pressure { get; protected set; }
+        public double pressure { get;  set; }
 
         [JsonProperty("humidity")]
-        public int humidity { get; protected set; }
+        public int humidity { get;  set; }
 
         [JsonProperty("weather")]
-        public ReactiveList<Weather> weather { get; protected set; }
+        public ReactiveList<Weather> weather { get;  set; }
 
         [JsonProperty("speed")]
-        public double speed { get; protected set; }
+        public double speed { get;  set; }
 
         [JsonProperty("deg")]
-        public int deg { get; protected set; }
+        public int deg { get;  set; }
 
         [JsonProperty("clouds")]
-        public int clouds { get; protected set; }
+        public int clouds { get;  set; }
 
         [JsonProperty("rain")]
-        public double? rain { get; protected set; }
+        public double? rain { get;  set; }
 
         public string friendlyTimeStamp
         {
@@ -107,16 +107,26 @@ namespace ReactiveWeather.Shared
 
     public class WeatherObject:ReactiveObject
     {
+        private ReactiveList<Info> infoList;
+
         [JsonProperty("cod")]
-        public string cod { get; protected set; }
+        public string cod { get;  set; }
         [JsonProperty("message")]
-        public double message { get; protected set; }
+        public double message { get;  set; }
         [JsonProperty("city")]
-        public City city { get; protected set; }
+        public City city { get;  set; }
         [JsonProperty("cnt")]
-        public int cnt { get; protected set; }
+        public int cnt { get;  set; }
+
+//        [JsonProperty("list")]
+//        public ReactiveList<Info> list { get; protected set; }
+
         [JsonProperty("list")]
-        public ReactiveList<Info> list { get; protected set; }
+        public ReactiveList<Info> InfoList
+        {
+            get { return infoList; }
+            set { this.RaiseAndSetIfChanged(ref infoList, value); }
+        }
     }
 
 
