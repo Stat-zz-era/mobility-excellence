@@ -1,6 +1,6 @@
-# Version: 8.0.0.63 (58b46df)
+# Version: 8.2.0.193 (959c1e4)
 # [first argument, ignore] # /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Touch/bin/iPhoneSimulator/Debug/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/8.0.0.63/bin/mtouch \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.2.0.193/bin/mtouch \
 	-sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
 	--cache \
@@ -42,7 +42,7 @@
 	-debug \
 	-nolink \
 	-sdk \
-	7.1 \
+	8.0 \
 	-targetver \
 	7.0 \
 	--abi=i386 \

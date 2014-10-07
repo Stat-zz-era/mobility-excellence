@@ -697,6 +697,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
@@ -758,19 +759,20 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
 	-(void) viewDidAppear:(bool)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveViewController, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "ViewDidAppear");
+		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveViewController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "ViewDidAppear");
 	}
 
 	-(void) viewDidDisappear:(bool)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveViewController, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "ViewDidDisappear");
+		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveViewController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "ViewDidDisappear");
 	}
 
 	-(bool) conformsToProtocol:(void *)p0
@@ -782,7 +784,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveViewController, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", ".ctor");
+		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveViewController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", ".ctor");
 	}
 @end
 
@@ -856,19 +858,20 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
 	-(void) viewDidAppear:(bool)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewController, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "ViewDidAppear");
+		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "ViewDidAppear");
 	}
 
 	-(void) viewDidDisappear:(bool)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewController, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "ViewDidDisappear");
+		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "ViewDidDisappear");
 	}
 
 	-(bool) conformsToProtocol:(void *)p0
@@ -880,7 +883,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveTableViewController, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", ".ctor");
+		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveTableViewController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", ".ctor");
 	}
 @end
 
@@ -922,6 +925,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
@@ -959,79 +963,79 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 	-(id) tableView:(id)p0 cellForRowAtIndexPath:(id)p1
 	{
 		MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_7 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "GetCell");
+		return native_to_managed_trampoline_7 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "GetCell");
 	}
 
 	-(int) numberOfSectionsInTableView:(id)p0
 	{
 		MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "NumberOfSections");
+		return native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "NumberOfSections");
 	}
 
 	-(int) tableView:(id)p0 numberOfRowsInSection:(int)p1
 	{
 		MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "RowsInSection");
+		return native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "RowsInSection");
 	}
 
 	-(bool) tableView:(id)p0 canEditRowAtIndexPath:(id)p1
 	{
 		MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "CanEditRow");
+		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "CanEditRow");
 	}
 
 	-(bool) tableView:(id)p0 canMoveRowAtIndexPath:(id)p1
 	{
 		MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "CanMoveRow");
+		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "CanMoveRow");
 	}
 
 	-(void) tableView:(id)p0 didSelectRowAtIndexPath:(id)p1
 	{
 		MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "RowSelected");
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "RowSelected");
 	}
 
 	-(float) tableView:(id)p0 heightForRowAtIndexPath:(id)p1
 	{
 		MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "GetHeightForRow");
+		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "GetHeightForRow");
 	}
 
 	-(float) tableView:(id)p0 heightForHeaderInSection:(int)p1
 	{
 		MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "GetHeightForHeader");
+		return native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "GetHeightForHeader");
 	}
 
 	-(float) tableView:(id)p0 heightForFooterInSection:(int)p1
 	{
 		MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "GetHeightForFooter");
+		return native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "GetHeightForFooter");
 	}
 
 	-(NSString *) tableView:(id)p0 titleForHeaderInSection:(int)p1
 	{
 		MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_14 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "TitleForHeader");
+		return native_to_managed_trampoline_14 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "TitleForHeader");
 	}
 
 	-(NSString *) tableView:(id)p0 titleForFooterInSection:(int)p1
 	{
 		MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_14 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "TitleForFooter");
+		return native_to_managed_trampoline_14 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "TitleForFooter");
 	}
 
 	-(id) tableView:(id)p0 viewForHeaderInSection:(int)p1
 	{
 		MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_15 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "GetViewForHeader");
+		return native_to_managed_trampoline_15 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "GetViewForHeader");
 	}
 
 	-(id) tableView:(id)p0 viewForFooterInSection:(int)p1
 	{
 		MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_15 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "GetViewForFooter");
+		return native_to_managed_trampoline_15 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "GetViewForFooter");
 	}
 @end
 
@@ -1074,13 +1078,14 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
 	-(void) willMoveToSuperview:(id)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveTableViewCell, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "WillMoveToSuperview");
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveTableViewCell, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "WillMoveToSuperview");
 	}
 
 	-(bool) conformsToProtocol:(void *)p0
@@ -1092,7 +1097,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveTableViewCell, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", ".ctor");
+		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveTableViewCell, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", ".ctor");
 	}
 @end
 
@@ -1179,6 +1184,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
@@ -1220,6 +1226,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
@@ -1261,6 +1268,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
@@ -1302,6 +1310,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
@@ -1343,6 +1352,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
@@ -1385,6 +1395,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
@@ -1433,6 +1444,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
@@ -1480,13 +1492,14 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
 	-(void) observeValueForKeyPath:(id)p0 ofObject:(id)p1 change:(id)p2 context:(void *)p3
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_17 (self, _cmd, &managed_method, p0, p1, p2, p3, "MonoTouch.Foundation.NSString, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSObject, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSDictionary, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.IntPtr, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.BlockObserveValueDelegate, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "ObserveValue");
+		native_to_managed_trampoline_17 (self, _cmd, &managed_method, p0, p1, p2, p3, "MonoTouch.Foundation.NSString, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSObject, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSDictionary, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.IntPtr, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.BlockObserveValueDelegate, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "ObserveValue");
 	}
 
 	-(bool) conformsToProtocol:(void *)p0
@@ -1524,31 +1537,32 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
 	-(id) collectionView:(id)p0 cellForItemAtIndexPath:(id)p1
 	{
 		MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_7 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UICollectionView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveCollectionViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "GetCell");
+		return native_to_managed_trampoline_7 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UICollectionView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveCollectionViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "GetCell");
 	}
 
 	-(int) numberOfSectionsInCollectionView:(id)p0
 	{
 		MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UICollectionView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveCollectionViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "NumberOfSections");
+		return native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UICollectionView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveCollectionViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "NumberOfSections");
 	}
 
 	-(int) collectionView:(id)p0 numberOfItemsInSection:(int)p1
 	{
 		MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UICollectionView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveCollectionViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "GetItemsCount");
+		return native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UICollectionView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveCollectionViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "GetItemsCount");
 	}
 
 	-(void) collectionView:(id)p0 didSelectItemAtIndexPath:(id)p1
 	{
 		MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UICollectionView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveCollectionViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "ItemSelected");
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UICollectionView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveCollectionViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "ItemSelected");
 	}
 
 	-(bool) conformsToProtocol:(void *)p0
@@ -1585,19 +1599,20 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
 	-(void) viewDidAppear:(bool)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveCollectionViewController, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "ViewDidAppear");
+		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveCollectionViewController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "ViewDidAppear");
 	}
 
 	-(void) viewDidDisappear:(bool)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveCollectionViewController, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "ViewDidDisappear");
+		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveCollectionViewController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "ViewDidDisappear");
 	}
 
 	-(bool) conformsToProtocol:(void *)p0
@@ -1609,7 +1624,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveCollectionViewController, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", ".ctor");
+		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveCollectionViewController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", ".ctor");
 	}
 @end
 
@@ -1640,19 +1655,20 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
 	-(void) viewDidAppear:(bool)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactivePageViewController, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "ViewDidAppear");
+		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactivePageViewController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "ViewDidAppear");
 	}
 
 	-(void) viewDidDisappear:(bool)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactivePageViewController, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "ViewDidDisappear");
+		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactivePageViewController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "ViewDidDisappear");
 	}
 
 	-(bool) conformsToProtocol:(void *)p0
@@ -1664,7 +1680,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactivePageViewController, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", ".ctor");
+		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactivePageViewController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", ".ctor");
 	}
 @end
 
@@ -1694,19 +1710,20 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
 	-(void) willMoveToSuperview:(id)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveCollectionView, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "WillMoveToSuperview");
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveCollectionView, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "WillMoveToSuperview");
 	}
 
 	-(void) removeFromSuperview
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_6 (self, _cmd, &managed_method, "ReactiveUI.ReactiveCollectionView, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "RemoveFromSuperview");
+		native_to_managed_trampoline_6 (self, _cmd, &managed_method, "ReactiveUI.ReactiveCollectionView, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "RemoveFromSuperview");
 	}
 
 	-(bool) conformsToProtocol:(void *)p0
@@ -1743,19 +1760,20 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
 	-(void) willMoveToSuperview:(id)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveCollectionReusableView, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "WillMoveToSuperview");
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveCollectionReusableView, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "WillMoveToSuperview");
 	}
 
 	-(void) removeFromSuperview
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_6 (self, _cmd, &managed_method, "ReactiveUI.ReactiveCollectionReusableView, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "RemoveFromSuperview");
+		native_to_managed_trampoline_6 (self, _cmd, &managed_method, "ReactiveUI.ReactiveCollectionReusableView, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "RemoveFromSuperview");
 	}
 
 	-(bool) conformsToProtocol:(void *)p0
@@ -1767,7 +1785,63 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveCollectionReusableView, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", ".ctor");
+		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveCollectionReusableView, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", ".ctor");
+	}
+@end
+
+@interface ReactiveUI_ReactiveTabBarController : UITabBarController {
+	void *__monoObjectGCHandle;
+}
+	-(void) release;
+	-(id) retain;
+	-(void) dealloc;
+	-(void) viewDidAppear:(bool)p0;
+	-(void) viewDidDisappear:(bool)p0;
+	-(bool) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+@implementation ReactiveUI_ReactiveTabBarController { } 
+	-(void) release
+	{
+		monotouch_release_trampoline (self, _cmd);
+	}
+
+	-(id) retain
+	{
+		return monotouch_retain_trampoline (self, _cmd);
+	}
+
+	-(void) dealloc
+	{
+		int gchandle = monotouch_get_gchandle (self);
+		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
+		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
+		[super dealloc];
+	}
+
+	-(void) viewDidAppear:(bool)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTabBarController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "ViewDidAppear");
+	}
+
+	-(void) viewDidDisappear:(bool)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "ReactiveUI.ReactiveTabBarController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "ViewDidDisappear");
+	}
+
+	-(bool) conformsToProtocol:(void *)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_3 (self, _cmd, &managed_method, p0, "System.IntPtr, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "MonoTouch.Foundation.NSObject, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "InvokeConformsToProtocol");
+	}
+
+	-(id) init
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveTabBarController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", ".ctor");
 	}
 @end
 
@@ -1796,13 +1870,14 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
 	-(void) theAction:(id)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.Foundation.NSObject, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.TargetActionCommandBinder+ControlDelegate, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "TheAction");
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.Foundation.NSObject, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.TargetActionCommandBinder+ControlDelegate, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "TheAction");
 	}
 
 	-(bool) conformsToProtocol:(void *)p0
@@ -1838,13 +1913,14 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
 	-(void) willMoveToSuperview:(id)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveView, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "WillMoveToSuperview");
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveView, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "WillMoveToSuperview");
 	}
 
 	-(bool) conformsToProtocol:(void *)p0
@@ -1856,7 +1932,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveView, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", ".ctor");
+		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveView, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", ".ctor");
 	}
 @end
 
@@ -1886,13 +1962,14 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
 	-(void) willMoveToSuperview:(id)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveImageView, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "WillMoveToSuperview");
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveImageView, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "WillMoveToSuperview");
 	}
 
 	-(bool) conformsToProtocol:(void *)p0
@@ -1904,7 +1981,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveImageView, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", ".ctor");
+		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveImageView, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", ".ctor");
 	}
 @end
 
@@ -1934,13 +2011,14 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
 	-(void) willMoveToSuperview:(id)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveCollectionViewCell, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "WillMoveToSuperview");
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveCollectionViewCell, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "WillMoveToSuperview");
 	}
 
 	-(bool) conformsToProtocol:(void *)p0
@@ -1952,7 +2030,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveCollectionViewCell, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", ".ctor");
+		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveCollectionViewCell, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", ".ctor");
 	}
 @end
 
@@ -1982,13 +2060,14 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
 	-(void) willMoveToSuperview:(id)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveControl, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "WillMoveToSuperview");
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveControl, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "WillMoveToSuperview");
 	}
 
 	-(bool) conformsToProtocol:(void *)p0
@@ -2000,7 +2079,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveControl, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", ".ctor");
+		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveControl, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", ".ctor");
 	}
 @end
 
@@ -2030,13 +2109,14 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
 	-(void) willMoveToSuperview:(id)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveTableView, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "WillMoveToSuperview");
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "ReactiveUI.ReactiveTableView, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "WillMoveToSuperview");
 	}
 
 	-(bool) conformsToProtocol:(void *)p0
@@ -2048,7 +2128,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveTableView, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", ".ctor");
+		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "ReactiveUI.ReactiveTableView, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", ".ctor");
 	}
 @end
 
@@ -2078,6 +2158,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		int gchandle = monotouch_get_gchandle (self);
 		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
 		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
 		[super dealloc];
 	}
 
@@ -2105,17 +2186,17 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		{"AppDelegate", "ReactiveWeather.Touch.AppDelegate, ReactiveWeatherTouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", NULL },
 		{"UIResponder", "MonoTouch.UIKit.UIResponder, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UIViewController", "MonoTouch.UIKit.UIViewController, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
-		{"ReactiveUI_ReactiveViewController", "ReactiveUI.ReactiveViewController, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_ReactiveViewController", "ReactiveUI.ReactiveViewController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
 		{"ReactiveWeather_TouchViewController", "ReactiveWeather.Touch.ReactiveWeather_TouchViewController, ReactiveWeatherTouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", NULL },
 		{"UITableViewController", "MonoTouch.UIKit.UITableViewController, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
-		{"ReactiveUI_ReactiveTableViewController", "ReactiveUI.ReactiveTableViewController, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_ReactiveTableViewController", "ReactiveUI.ReactiveTableViewController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
 		{"ForecastViewController", "ReactiveWeather.Touch.ForecastViewController, ReactiveWeatherTouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", NULL },
 		{"UITableViewSource", "MonoTouch.UIKit.UITableViewSource, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
-		{"ReactiveUI_ReactiveTableViewSource_1", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_ReactiveTableViewSource_1", "ReactiveUI.ReactiveTableViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
 		{"ReactiveWeather_Touch_RxTableSource_1", "ReactiveWeather.Touch.RxTableSource`1, ReactiveWeatherTouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", NULL },
 		{"UIView", "MonoTouch.UIKit.UIView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UITableViewCell", "MonoTouch.UIKit.UITableViewCell, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
-		{"ReactiveUI_ReactiveTableViewCell", "ReactiveUI.ReactiveTableViewCell, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_ReactiveTableViewCell", "ReactiveUI.ReactiveTableViewCell, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
 		{"ForecastCell", "ReactiveWeather.Touch.ForecastCell, ReactiveWeatherTouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", NULL },
 		{"CALayer", "MonoTouch.CoreAnimation.CALayer, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"NSArray", "MonoTouch.Foundation.NSArray, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
@@ -2124,6 +2205,7 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		{"NSDate", "MonoTouch.Foundation.NSDate, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"NSFileManager", "MonoTouch.Foundation.NSFileManager, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"NSIndexPath", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
+		{"NSLayoutConstraint", "MonoTouch.UIKit.NSLayoutConstraint, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"MonoTouch_Foundation_InternalNSNotificationHandler", "MonoTouch.Foundation.InternalNSNotificationHandler, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"NSValue", "MonoTouch.Foundation.NSValue, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"NSNumber", "MonoTouch.Foundation.NSNumber, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
@@ -2161,18 +2243,23 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		{"UITextView", "MonoTouch.UIKit.UITextView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UIToolbar", "MonoTouch.UIKit.UIToolbar, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UIWindow", "MonoTouch.UIKit.UIWindow, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
-		{"NSLayoutConstraint", "MonoTouch.UIKit.NSLayoutConstraint, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UICollectionReusableView", "MonoTouch.UIKit.UICollectionReusableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UICollectionViewCell", "MonoTouch.UIKit.UICollectionViewCell, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UICollectionViewController", "MonoTouch.UIKit.UICollectionViewController, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
+		{"UITextPosition", "MonoTouch.UIKit.UITextPosition, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
+		{"UITextRange", "MonoTouch.UIKit.UITextRange, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
+		{"UITextSelectionRect", "MonoTouch.UIKit.UITextSelectionRect, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UIRefreshControl", "MonoTouch.UIKit.UIRefreshControl, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UIActivityIndicatorView", "MonoTouch.UIKit.UIActivityIndicatorView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UILabel", "MonoTouch.UIKit.UILabel, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UIImageView", "MonoTouch.UIKit.UIImageView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UIDatePicker", "MonoTouch.UIKit.UIDatePicker, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
+		{"UINavigationItem", "MonoTouch.UIKit.UINavigationItem, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UISlider", "MonoTouch.UIKit.UISlider, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UISwitch", "MonoTouch.UIKit.UISwitch, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UITabBar", "MonoTouch.UIKit.UITabBar, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
+		{"UITabBarController", "MonoTouch.UIKit.UITabBarController, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
+		{"UITraitCollection", "MonoTouch.UIKit.UITraitCollection, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UIStoryboard", "MonoTouch.UIKit.UIStoryboard, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"CAShapeLayer", "MonoTouch.CoreAnimation.CAShapeLayer, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"CATransaction", "MonoTouch.CoreAnimation.CATransaction, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
@@ -2186,18 +2273,19 @@ void native_to_managed_trampoline_19 (id self, SEL _cmd, MonoMethod **managed_me
 		{"__NSObject_Disposer", "MonoTouch.Foundation.NSObject+NSObject_Disposer, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"MonoTouch_UIKit_UIBarButtonItem_Callback", "MonoTouch.UIKit.UIBarButtonItem+Callback, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UIBarButtonItem", "MonoTouch.UIKit.UIBarButtonItem, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
-		{"ReactiveUI_BlockObserveValueDelegate", "ReactiveUI.BlockObserveValueDelegate, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", NULL },
-		{"ReactiveUI_ReactiveCollectionViewSource_1", "ReactiveUI.ReactiveCollectionViewSource`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", NULL },
-		{"ReactiveUI_ReactiveCollectionViewController", "ReactiveUI.ReactiveCollectionViewController, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", NULL },
-		{"ReactiveUI_ReactivePageViewController", "ReactiveUI.ReactivePageViewController, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", NULL },
-		{"ReactiveUI_ReactiveCollectionView", "ReactiveUI.ReactiveCollectionView, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", NULL },
-		{"ReactiveUI_ReactiveCollectionReusableView", "ReactiveUI.ReactiveCollectionReusableView, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", NULL },
-		{"ReactiveUI_TargetActionCommandBinder_ControlDelegate", "ReactiveUI.TargetActionCommandBinder+ControlDelegate, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", NULL },
-		{"ReactiveUI_ReactiveView", "ReactiveUI.ReactiveView, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", NULL },
-		{"ReactiveUI_ReactiveImageView", "ReactiveUI.ReactiveImageView, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", NULL },
-		{"ReactiveUI_ReactiveCollectionViewCell", "ReactiveUI.ReactiveCollectionViewCell, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", NULL },
-		{"ReactiveUI_ReactiveControl", "ReactiveUI.ReactiveControl, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", NULL },
-		{"ReactiveUI_ReactiveTableView", "ReactiveUI.ReactiveTableView, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_BlockObserveValueDelegate", "ReactiveUI.BlockObserveValueDelegate, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_ReactiveCollectionViewSource_1", "ReactiveUI.ReactiveCollectionViewSource`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_ReactiveCollectionViewController", "ReactiveUI.ReactiveCollectionViewController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_ReactivePageViewController", "ReactiveUI.ReactivePageViewController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_ReactiveCollectionView", "ReactiveUI.ReactiveCollectionView, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_ReactiveCollectionReusableView", "ReactiveUI.ReactiveCollectionReusableView, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_ReactiveTabBarController", "ReactiveUI.ReactiveTabBarController, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_TargetActionCommandBinder_ControlDelegate", "ReactiveUI.TargetActionCommandBinder+ControlDelegate, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_ReactiveView", "ReactiveUI.ReactiveView, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_ReactiveImageView", "ReactiveUI.ReactiveImageView, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_ReactiveCollectionViewCell", "ReactiveUI.ReactiveCollectionViewCell, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_ReactiveControl", "ReactiveUI.ReactiveControl, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"ReactiveUI_ReactiveTableView", "ReactiveUI.ReactiveTableView, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", NULL },
 		{"BigTed_ProgressHUD", "BigTed.ProgressHUD, BTProgressHUD, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", NULL },
 		{ NULL, NULL, NULL },
 	};
@@ -2227,81 +2315,88 @@ void monotouch_create_classes () {
 	__monotouch_class_map [20].handle = objc_getClass ("NSDate");
 	__monotouch_class_map [21].handle = objc_getClass ("NSFileManager");
 	__monotouch_class_map [22].handle = objc_getClass ("NSIndexPath");
-	__monotouch_class_map [23].handle = objc_getClass ("MonoTouch_Foundation_InternalNSNotificationHandler");
-	__monotouch_class_map [24].handle = objc_getClass ("NSValue");
-	__monotouch_class_map [25].handle = objc_getClass ("NSNumber");
-	__monotouch_class_map [26].handle = objc_getClass ("NSRunLoop");
-	__monotouch_class_map [27].handle = objc_getClass ("NSString");
-	__monotouch_class_map [28].handle = objc_getClass ("NSThread");
-	__monotouch_class_map [29].handle = objc_getClass ("NSTimer");
-	__monotouch_class_map [30].handle = objc_getClass ("NSURL");
-	__monotouch_class_map [31].handle = objc_getClass ("__MonoMac_NSActionDispatcher");
-	__monotouch_class_map [32].handle = objc_getClass ("__Xamarin_NSTimerActionDispatcher");
-	__monotouch_class_map [33].handle = objc_getClass ("__MonoMac_NSAsyncActionDispatcher");
-	__monotouch_class_map [34].handle = objc_getClass ("NSAutoreleasePool");
-	__monotouch_class_map [35].handle = objc_getClass ("NSError");
-	__monotouch_class_map [36].handle = objc_getClass ("UIApplication");
-	__monotouch_class_map [37].handle = objc_getClass ("UIBarItem");
-	__monotouch_class_map [38].handle = objc_getClass ("UIBezierPath");
-	__monotouch_class_map [39].handle = objc_getClass ("UIControl");
-	__monotouch_class_map [40].handle = objc_getClass ("UIButton");
-	__monotouch_class_map [41].handle = objc_getClass ("UIScrollView");
-	__monotouch_class_map [42].handle = objc_getClass ("UICollectionView");
-	__monotouch_class_map [43].handle = objc_getClass ("UICollectionViewLayout");
-	__monotouch_class_map [44].handle = objc_getClass ("UIColor");
-	__monotouch_class_map [45].handle = objc_getClass ("MonoTouch_UIKit_UIControlEventProxy");
-	__monotouch_class_map [46].handle = objc_getClass ("UIDevice");
-	__monotouch_class_map [47].handle = objc_getClass ("UIFont");
-	__monotouch_class_map [48].handle = objc_getClass ("UIImage");
-	__monotouch_class_map [49].handle = objc_getClass ("UINavigationController");
-	__monotouch_class_map [50].handle = objc_getClass ("UINib");
-	__monotouch_class_map [51].handle = objc_getClass ("UIPageViewController");
-	__monotouch_class_map [52].handle = objc_getClass ("UIScreen");
-	__monotouch_class_map [53].handle = objc_getClass ("UISearchBar");
-	__monotouch_class_map [54].handle = objc_getClass ("UISegmentedControl");
-	__monotouch_class_map [55].handle = objc_getClass ("UITableView");
-	__monotouch_class_map [56].handle = objc_getClass ("UITextField");
-	__monotouch_class_map [57].handle = objc_getClass ("UITextView");
-	__monotouch_class_map [58].handle = objc_getClass ("UIToolbar");
-	__monotouch_class_map [59].handle = objc_getClass ("UIWindow");
-	__monotouch_class_map [60].handle = objc_getClass ("NSLayoutConstraint");
+	__monotouch_class_map [23].handle = objc_getClass ("NSLayoutConstraint");
+	__monotouch_class_map [24].handle = objc_getClass ("MonoTouch_Foundation_InternalNSNotificationHandler");
+	__monotouch_class_map [25].handle = objc_getClass ("NSValue");
+	__monotouch_class_map [26].handle = objc_getClass ("NSNumber");
+	__monotouch_class_map [27].handle = objc_getClass ("NSRunLoop");
+	__monotouch_class_map [28].handle = objc_getClass ("NSString");
+	__monotouch_class_map [29].handle = objc_getClass ("NSThread");
+	__monotouch_class_map [30].handle = objc_getClass ("NSTimer");
+	__monotouch_class_map [31].handle = objc_getClass ("NSURL");
+	__monotouch_class_map [32].handle = objc_getClass ("__MonoMac_NSActionDispatcher");
+	__monotouch_class_map [33].handle = objc_getClass ("__Xamarin_NSTimerActionDispatcher");
+	__monotouch_class_map [34].handle = objc_getClass ("__MonoMac_NSAsyncActionDispatcher");
+	__monotouch_class_map [35].handle = objc_getClass ("NSAutoreleasePool");
+	__monotouch_class_map [36].handle = objc_getClass ("NSError");
+	__monotouch_class_map [37].handle = objc_getClass ("UIApplication");
+	__monotouch_class_map [38].handle = objc_getClass ("UIBarItem");
+	__monotouch_class_map [39].handle = objc_getClass ("UIBezierPath");
+	__monotouch_class_map [40].handle = objc_getClass ("UIControl");
+	__monotouch_class_map [41].handle = objc_getClass ("UIButton");
+	__monotouch_class_map [42].handle = objc_getClass ("UIScrollView");
+	__monotouch_class_map [43].handle = objc_getClass ("UICollectionView");
+	__monotouch_class_map [44].handle = objc_getClass ("UICollectionViewLayout");
+	__monotouch_class_map [45].handle = objc_getClass ("UIColor");
+	__monotouch_class_map [46].handle = objc_getClass ("MonoTouch_UIKit_UIControlEventProxy");
+	__monotouch_class_map [47].handle = objc_getClass ("UIDevice");
+	__monotouch_class_map [48].handle = objc_getClass ("UIFont");
+	__monotouch_class_map [49].handle = objc_getClass ("UIImage");
+	__monotouch_class_map [50].handle = objc_getClass ("UINavigationController");
+	__monotouch_class_map [51].handle = objc_getClass ("UINib");
+	__monotouch_class_map [52].handle = objc_getClass ("UIPageViewController");
+	__monotouch_class_map [53].handle = objc_getClass ("UIScreen");
+	__monotouch_class_map [54].handle = objc_getClass ("UISearchBar");
+	__monotouch_class_map [55].handle = objc_getClass ("UISegmentedControl");
+	__monotouch_class_map [56].handle = objc_getClass ("UITableView");
+	__monotouch_class_map [57].handle = objc_getClass ("UITextField");
+	__monotouch_class_map [58].handle = objc_getClass ("UITextView");
+	__monotouch_class_map [59].handle = objc_getClass ("UIToolbar");
+	__monotouch_class_map [60].handle = objc_getClass ("UIWindow");
 	__monotouch_class_map [61].handle = objc_getClass ("UICollectionReusableView");
 	__monotouch_class_map [62].handle = objc_getClass ("UICollectionViewCell");
 	__monotouch_class_map [63].handle = objc_getClass ("UICollectionViewController");
-	__monotouch_class_map [64].handle = objc_getClass ("UIRefreshControl");
-	__monotouch_class_map [65].handle = objc_getClass ("UIActivityIndicatorView");
-	__monotouch_class_map [66].handle = objc_getClass ("UILabel");
-	__monotouch_class_map [67].handle = objc_getClass ("UIImageView");
-	__monotouch_class_map [68].handle = objc_getClass ("UIDatePicker");
-	__monotouch_class_map [69].handle = objc_getClass ("UISlider");
-	__monotouch_class_map [70].handle = objc_getClass ("UISwitch");
-	__monotouch_class_map [71].handle = objc_getClass ("UITabBar");
-	__monotouch_class_map [72].handle = objc_getClass ("UIStoryboard");
-	__monotouch_class_map [73].handle = objc_getClass ("CAShapeLayer");
-	__monotouch_class_map [74].handle = objc_getClass ("CATransaction");
-	__monotouch_class_map [75].handle = objc_getClass ("NSException");
-	__monotouch_class_map [76].handle = objc_getClass ("NSNull");
-	__monotouch_class_map [77].handle = objc_getClass ("NSNotification");
-	__monotouch_class_map [78].handle = objc_getClass ("NSData");
-	__monotouch_class_map [79].handle = objc_getClass ("NSDictionary");
-	__monotouch_class_map [80].handle = objc_getClass ("NSMutableData");
-	__monotouch_class_map [81].handle = objc_getClass ("NSNotificationCenter");
-	__monotouch_class_map [82].handle = objc_getClass ("__NSObject_Disposer");
-	__monotouch_class_map [83].handle = objc_getClass ("MonoTouch_UIKit_UIBarButtonItem_Callback");
-	__monotouch_class_map [84].handle = objc_getClass ("UIBarButtonItem");
-	__monotouch_class_map [85].handle = [ReactiveUI_BlockObserveValueDelegate class];
-	__monotouch_class_map [86].handle = [ReactiveUI_ReactiveCollectionViewSource_1 class];
-	__monotouch_class_map [87].handle = [ReactiveUI_ReactiveCollectionViewController class];
-	__monotouch_class_map [88].handle = [ReactiveUI_ReactivePageViewController class];
-	__monotouch_class_map [89].handle = [ReactiveUI_ReactiveCollectionView class];
-	__monotouch_class_map [90].handle = [ReactiveUI_ReactiveCollectionReusableView class];
-	__monotouch_class_map [91].handle = [ReactiveUI_TargetActionCommandBinder_ControlDelegate class];
-	__monotouch_class_map [92].handle = [ReactiveUI_ReactiveView class];
-	__monotouch_class_map [93].handle = [ReactiveUI_ReactiveImageView class];
-	__monotouch_class_map [94].handle = [ReactiveUI_ReactiveCollectionViewCell class];
-	__monotouch_class_map [95].handle = [ReactiveUI_ReactiveControl class];
-	__monotouch_class_map [96].handle = [ReactiveUI_ReactiveTableView class];
-	__monotouch_class_map [97].handle = [BigTed_ProgressHUD class];
-	monotouch_setup_classmap (__monotouch_class_map, 98);
+	__monotouch_class_map [64].handle = objc_getClass ("UITextPosition");
+	__monotouch_class_map [65].handle = objc_getClass ("UITextRange");
+	__monotouch_class_map [66].handle = objc_getClass ("UITextSelectionRect");
+	__monotouch_class_map [67].handle = objc_getClass ("UIRefreshControl");
+	__monotouch_class_map [68].handle = objc_getClass ("UIActivityIndicatorView");
+	__monotouch_class_map [69].handle = objc_getClass ("UILabel");
+	__monotouch_class_map [70].handle = objc_getClass ("UIImageView");
+	__monotouch_class_map [71].handle = objc_getClass ("UIDatePicker");
+	__monotouch_class_map [72].handle = objc_getClass ("UINavigationItem");
+	__monotouch_class_map [73].handle = objc_getClass ("UISlider");
+	__monotouch_class_map [74].handle = objc_getClass ("UISwitch");
+	__monotouch_class_map [75].handle = objc_getClass ("UITabBar");
+	__monotouch_class_map [76].handle = objc_getClass ("UITabBarController");
+	__monotouch_class_map [77].handle = objc_getClass ("UITraitCollection");
+	__monotouch_class_map [78].handle = objc_getClass ("UIStoryboard");
+	__monotouch_class_map [79].handle = objc_getClass ("CAShapeLayer");
+	__monotouch_class_map [80].handle = objc_getClass ("CATransaction");
+	__monotouch_class_map [81].handle = objc_getClass ("NSException");
+	__monotouch_class_map [82].handle = objc_getClass ("NSNull");
+	__monotouch_class_map [83].handle = objc_getClass ("NSNotification");
+	__monotouch_class_map [84].handle = objc_getClass ("NSData");
+	__monotouch_class_map [85].handle = objc_getClass ("NSDictionary");
+	__monotouch_class_map [86].handle = objc_getClass ("NSMutableData");
+	__monotouch_class_map [87].handle = objc_getClass ("NSNotificationCenter");
+	__monotouch_class_map [88].handle = objc_getClass ("__NSObject_Disposer");
+	__monotouch_class_map [89].handle = objc_getClass ("MonoTouch_UIKit_UIBarButtonItem_Callback");
+	__monotouch_class_map [90].handle = objc_getClass ("UIBarButtonItem");
+	__monotouch_class_map [91].handle = [ReactiveUI_BlockObserveValueDelegate class];
+	__monotouch_class_map [92].handle = [ReactiveUI_ReactiveCollectionViewSource_1 class];
+	__monotouch_class_map [93].handle = [ReactiveUI_ReactiveCollectionViewController class];
+	__monotouch_class_map [94].handle = [ReactiveUI_ReactivePageViewController class];
+	__monotouch_class_map [95].handle = [ReactiveUI_ReactiveCollectionView class];
+	__monotouch_class_map [96].handle = [ReactiveUI_ReactiveCollectionReusableView class];
+	__monotouch_class_map [97].handle = [ReactiveUI_ReactiveTabBarController class];
+	__monotouch_class_map [98].handle = [ReactiveUI_TargetActionCommandBinder_ControlDelegate class];
+	__monotouch_class_map [99].handle = [ReactiveUI_ReactiveView class];
+	__monotouch_class_map [100].handle = [ReactiveUI_ReactiveImageView class];
+	__monotouch_class_map [101].handle = [ReactiveUI_ReactiveCollectionViewCell class];
+	__monotouch_class_map [102].handle = [ReactiveUI_ReactiveControl class];
+	__monotouch_class_map [103].handle = [ReactiveUI_ReactiveTableView class];
+	__monotouch_class_map [104].handle = [BigTed_ProgressHUD class];
+	monotouch_setup_classmap (__monotouch_class_map, 105);
 }
 

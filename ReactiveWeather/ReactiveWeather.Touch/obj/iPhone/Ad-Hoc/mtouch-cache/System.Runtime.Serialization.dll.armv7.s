@@ -17,7 +17,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 4,1
-	.asciz "Mono AOT Compiler 3.8.0 (mono-3.8.0-branch/45d0ba1 Tue Aug 26 07:52:59 EDT 2014)"
+	.asciz "Mono AOT Compiler 3.10.0 (mono-3.10.0-branch/491d1f5 Fri Oct  3 00:18:38 EDT 2014)"
 	.asciz "System.Runtime.Serialization.dll"
 	.asciz ""
 
@@ -290,14 +290,14 @@ image_table:
 
 	.long 2
 	.asciz "System.Runtime.Serialization"
-	.asciz "383390CB-244C-4DB7-8E36-41E9547FF4A2"
+	.asciz "684E54C2-E34E-4337-A938-8E0014728848"
 	.asciz ""
 	.asciz "7cec85d7bea7798e"
 	.align 3
 
 	.long 1,2,0,5,0
 	.asciz "mscorlib"
-	.asciz "6B3E8066-599B-4D3F-90DF-C69F0383CE36"
+	.asciz "34CB4459-4B5D-47BC-AF5D-887A9696EC39"
 	.asciz ""
 	.asciz "7cec85d7bea7798e"
 	.align 3
@@ -311,7 +311,7 @@ got_end:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "383390CB-244C-4DB7-8E36-41E9547FF4A2"
+	.asciz "684E54C2-E34E-4337-A938-8E0014728848"
 .section __TEXT, __const
 	.align 2
 runtime_version:
@@ -324,7 +324,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 100,0
+	.long 102,0
 	.align 2
 	.long _mono_aot_System_Runtime_Serialization_got
 	.align 2
@@ -401,10 +401,10 @@ blob:
 
 	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,39,42,47,2,0,0,2,0,0,2,0
 	.byte 0,2,0,0,2,0,0,2,0,0,2,0,0,2,0,0,2,0,0,0,128,144,8,0,0,1,6,128,128,9,0,0
-	.byte 1,193,0,25,87,193,0,19,196,193,0,25,83,193,0,19,204,193,0,19,197,193,0,19,184,6,128,160,20,0,0,4
-	.byte 193,0,25,87,193,0,19,196,193,0,25,83,193,0,19,204,193,0,19,197,193,0,19,184,6,128,160,12,0,0,4,193
-	.byte 0,25,87,193,0,19,196,193,0,25,83,193,0,19,204,193,0,19,197,193,0,19,184,6,128,144,8,0,0,1,193,0
-	.byte 25,87,193,0,19,196,193,0,25,83,193,0,19,204,193,0,19,197,193,0,19,184,98,111,101,104,109,0
+	.byte 1,193,0,25,77,193,0,19,192,193,0,25,73,193,0,19,200,193,0,19,193,193,0,19,180,6,128,160,20,0,0,4
+	.byte 193,0,25,77,193,0,19,192,193,0,25,73,193,0,19,200,193,0,19,193,193,0,19,180,6,128,160,12,0,0,4,193
+	.byte 0,25,77,193,0,19,192,193,0,25,73,193,0,19,200,193,0,19,193,193,0,19,180,6,128,144,8,0,0,1,193,0
+	.byte 25,77,193,0,19,192,193,0,25,73,193,0,19,200,193,0,19,193,193,0,19,180,98,111,101,104,109,0
 .section __TEXT, __const
 	.align 3
 Lglobals_hash:
@@ -942,7 +942,7 @@ Ldebug_line_start:
 	.long Ldebug_line_header_end - . -4
 	.byte 1,1,251,14,13,0,1,1,1,1,0,0,0,1,0,0,1
 .section __DWARF, __debug_line,regular,debug
-	.asciz "///Library/Frameworks/Xamarin.iOS.framework/Versions/7.4.0.108/src/mono/mcs/class/System.Runtime.Serialization/System.Runtime.Serialization"
+	.asciz "///Library/Frameworks/Xamarin.iOS.framework/Versions/8.2.0.193/src/mono/mcs/class/System.Runtime.Serialization/System.Runtime.Serialization"
 
 	.byte 0
 	.asciz "<unknown>"

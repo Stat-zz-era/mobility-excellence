@@ -18,7 +18,7 @@ public class AutoSuspendHelper_ObservableLifecycle
 			"n_onActivityStarted:(Landroid/app/Activity;)V:GetOnActivityStarted_Landroid_app_Activity_Handler:Android.App.Application/IActivityLifecycleCallbacksInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"n_onActivityStopped:(Landroid/app/Activity;)V:GetOnActivityStopped_Landroid_app_Activity_Handler:Android.App.Application/IActivityLifecycleCallbacksInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"";
-		mono.android.Runtime.register ("ReactiveUI.AutoSuspendHelper/ObservableLifecycle, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", AutoSuspendHelper_ObservableLifecycle.class, __md_methods);
+		mono.android.Runtime.register ("ReactiveUI.AutoSuspendHelper/ObservableLifecycle, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", AutoSuspendHelper_ObservableLifecycle.class, __md_methods);
 	}
 
 
@@ -26,7 +26,7 @@ public class AutoSuspendHelper_ObservableLifecycle
 	{
 		super ();
 		if (getClass () == AutoSuspendHelper_ObservableLifecycle.class)
-			mono.android.TypeManager.Activate ("ReactiveUI.AutoSuspendHelper/ObservableLifecycle, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("ReactiveUI.AutoSuspendHelper/ObservableLifecycle, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

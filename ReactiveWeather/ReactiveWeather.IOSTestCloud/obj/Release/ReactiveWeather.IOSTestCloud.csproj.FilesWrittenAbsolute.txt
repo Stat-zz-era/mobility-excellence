@@ -3,4 +3,5 @@
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.IOSTestCloud/bin/Release/ReactiveWeather.IOSTestCloud.dll
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.IOSTestCloud/obj/Release/ReactiveWeather.IOSTestCloud.dll
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.IOSTestCloud/obj/Release/ReactiveWeather.IOSTestCloud.dll.mdb
+/Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.IOSTestCloud/bin/Release/nunit.framework.dll
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.IOSTestCloud/bin/Release/Xamarin.UITest.dll

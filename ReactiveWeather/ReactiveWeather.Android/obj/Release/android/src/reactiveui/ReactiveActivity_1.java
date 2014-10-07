@@ -10,7 +10,7 @@ public class ReactiveActivity_1
 	static {
 		__md_methods = 
 			"";
-		mono.android.Runtime.register ("ReactiveUI.ReactiveActivity`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", ReactiveActivity_1.class, __md_methods);
+		mono.android.Runtime.register ("ReactiveUI.ReactiveActivity`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", ReactiveActivity_1.class, __md_methods);
 	}
 
 
@@ -18,7 +18,7 @@ public class ReactiveActivity_1
 	{
 		super ();
 		if (getClass () == ReactiveActivity_1.class)
-			mono.android.TypeManager.Activate ("ReactiveUI.ReactiveActivity`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("ReactiveUI.ReactiveActivity`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 	java.util.ArrayList refList;

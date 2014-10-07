@@ -6,11 +6,11 @@
 	<dict>
 		<key>BTProgressHUD.dll</key>
 		<data>
-		nn4ldsTE9TQLL2WvKQYIPsyeldU=
+		vL+JGHOUnBtN9CLedoOYdmKwzUk=
 		</data>
 		<key>Common.PCL.dll</key>
 		<data>
-		DTZZN2VUeJcFBTFpqSNb8yCraPM=
+		NGxtrvSwuWBfr3uuePQo5RgADkU=
 		</data>
 		<key>Default-568h@2x.png</key>
 		<data>
@@ -18,39 +18,43 @@
 		</data>
 		<key>ForecastCell.nib</key>
 		<data>
-		WLc753YWbHtjWL+uEEVBpDS6byY=
+		ckKfUtLM6JiMFgO/zYdKO0eAVH4=
 		</data>
 		<key>MainStoryboard.storyboardc/31-view-32.nib</key>
 		<data>
-		SJTJNgcOz86QSzuidRQsTQa+jmA=
+		cdnUww3F3iQihnV0qw4WIYw9ouA=
 		</data>
 		<key>MainStoryboard.storyboardc/ForecastViewController.nib</key>
 		<data>
-		i6HZSkKwic2vmXlQ8eJRVwJhrG8=
+		CUOVrwbsGmdyC7EyzocGWP6CEv4=
+		</data>
+		<key>MainStoryboard.storyboardc/Info.plist</key>
+		<data>
+		mMnMHqGzX0NVYf24vmG/KrUdcYQ=
 		</data>
 		<key>MainStoryboard.storyboardc/UIViewController-8.nib</key>
 		<data>
-		nej9xoegqZw+abTNfuh47s/Puhw=
+		RklGbNT+xgphfTR7FKejGCdtSJs=
 		</data>
 		<key>MainStoryboard.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS.nib</key>
 		<data>
-		gzvYUJ2Xsi+BnTGtDQXZ4Ci5FfQ=
+		OPOVmZt9AGPxu57aUEUlUgaL1aU=
 		</data>
 		<key>Microsoft.CSharp.dll</key>
 		<data>
-		jPpNo92XvCXm1VsstXO3uQZe4QQ=
+		O5dBwaCFaruMXVQizLEImXKHQDI=
 		</data>
 		<key>ModernHttpClient.dll</key>
 		<data>
-		Ur/LwbA3bknz7+zxAk4xC0fBghA=
+		yoLAgxW9RbdmvffNizVHqZasFwI=
 		</data>
 		<key>Mono.CSharp.dll</key>
 		<data>
-		0zsMYnjb9cHxD5oS/cK0DAc4lCE=
+		CvsMV7nfyYr+u/pYN2Ipm8MFdtA=
 		</data>
 		<key>Mono.Dynamic.Interpreter.dll</key>
 		<data>
-		JOG2Iq8HZOuuqIXRM2FeyjWJ9wM=
+		9G3g6KqSXv4IIsnjhzPforQ0Dcw=
 		</data>
 		<key>NOTICE</key>
 		<data>
@@ -58,7 +62,7 @@
 		</data>
 		<key>Newtonsoft.Json.dll</key>
 		<data>
-		FpbtCxs04zAyp6hFAPOXY67j3sY=
+		Gr4beqd5glnQk3JuHOyRTHQt4v0=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -66,55 +70,55 @@
 		</data>
 		<key>ReactiveUI.dll</key>
 		<data>
-		tmAe1mbZBRITLVvs1TYLQ6yhyz4=
+		oGkPxMiMVVAnqNn31c4a7mFSUdA=
 		</data>
 		<key>ReactiveWeatherTouch.exe</key>
 		<data>
-		BHI6pMDTNkxe1b00Dv3UnaskYD8=
+		TDlunllnig2S9OYm20YoOSxjmtY=
 		</data>
 		<key>Splat.dll</key>
 		<data>
-		Ve7/T1T5yy2/Wiehn2Ddtkkz+XM=
+		2cwNiliO7yv8rViJow1s4i/cGRo=
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		46r59sb4FI8lmv/gzpSxEJU9dw8=
+		4+asvWPuzy2iQIZlYvZ95boi82A=
 		</data>
 		<key>System.Net.Http.dll</key>
 		<data>
-		h2VCmQQOdkI/WcHu/e+q9eCADMM=
+		TSkyz2p4Et8h3OSjwz6U1zIm5gM=
 		</data>
 		<key>System.Reactive.Core.dll</key>
 		<data>
-		2us3zevA+/0ycBCgwx0Or/XDzpM=
+		kc7z4PiIazS2K692ifIBBfdEjEo=
 		</data>
 		<key>System.Reactive.Interfaces.dll</key>
 		<data>
-		OaxyhIrFAQhyXAlT7KVUmPt6pes=
+		Y21ofDc9gQzo4dVDLWPW/JUlbGI=
 		</data>
 		<key>System.Reactive.Linq.dll</key>
 		<data>
-		2vzFXvUyUnr88zgu3H2oNDZzDdI=
+		v5Rv6N9mNdZhePPGx1MZOPqPM6A=
 		</data>
 		<key>System.Reactive.PlatformServices.dll</key>
 		<data>
-		+I94s78RFI1fJXm8W2Lq4dosu/E=
+		Wy3iFzexRtj9YVZ7ZALF/O3Zdlg=
 		</data>
 		<key>System.Runtime.Serialization.dll</key>
 		<data>
-		z2ADxy6ojkASuX4j83C8jtcVtk0=
+		WU7B2fL3lAnc/jvs1rLA5bMkkfI=
 		</data>
 		<key>System.Xml.Linq.dll</key>
 		<data>
-		6Z8ZKiQ/br2hIAYPQf9I+8rYGAM=
+		pDDfHWefzWUmaJ8j/MF/SrSa+sc=
 		</data>
 		<key>System.Xml.dll</key>
 		<data>
-		5Jdqsho+n9OvRWraDDfJ8PMl7vg=
+		4SqouyF/3oL+lPJUBW8ZWzvlYSs=
 		</data>
 		<key>System.dll</key>
 		<data>
-		mhhKaFc+3J/MyGXewdmY//Lil24=
+		fnSl+s6Bc20Eddi9Kj8eDVoom60=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -138,11 +142,11 @@
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		KtERsX8NuffXJPbDrFliESQW8xA=
+		WGXzffZe1vZwNum3NaICM80mqPM=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		XxyXPBM8BkcyKNldkNKNKJ2BQJE=
+		7X78J7eubOXRNEkKKihkoTxGWoI=
 		</data>
 		<key>success.png</key>
 		<data>
@@ -173,11 +177,11 @@
 	<dict>
 		<key>BTProgressHUD.dll</key>
 		<data>
-		nn4ldsTE9TQLL2WvKQYIPsyeldU=
+		vL+JGHOUnBtN9CLedoOYdmKwzUk=
 		</data>
 		<key>Common.PCL.dll</key>
 		<data>
-		DTZZN2VUeJcFBTFpqSNb8yCraPM=
+		NGxtrvSwuWBfr3uuePQo5RgADkU=
 		</data>
 		<key>Default-568h@2x.png</key>
 		<data>
@@ -185,39 +189,43 @@
 		</data>
 		<key>ForecastCell.nib</key>
 		<data>
-		WLc753YWbHtjWL+uEEVBpDS6byY=
+		ckKfUtLM6JiMFgO/zYdKO0eAVH4=
 		</data>
 		<key>MainStoryboard.storyboardc/31-view-32.nib</key>
 		<data>
-		SJTJNgcOz86QSzuidRQsTQa+jmA=
+		cdnUww3F3iQihnV0qw4WIYw9ouA=
 		</data>
 		<key>MainStoryboard.storyboardc/ForecastViewController.nib</key>
 		<data>
-		i6HZSkKwic2vmXlQ8eJRVwJhrG8=
+		CUOVrwbsGmdyC7EyzocGWP6CEv4=
+		</data>
+		<key>MainStoryboard.storyboardc/Info.plist</key>
+		<data>
+		mMnMHqGzX0NVYf24vmG/KrUdcYQ=
 		</data>
 		<key>MainStoryboard.storyboardc/UIViewController-8.nib</key>
 		<data>
-		nej9xoegqZw+abTNfuh47s/Puhw=
+		RklGbNT+xgphfTR7FKejGCdtSJs=
 		</data>
 		<key>MainStoryboard.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS.nib</key>
 		<data>
-		gzvYUJ2Xsi+BnTGtDQXZ4Ci5FfQ=
+		OPOVmZt9AGPxu57aUEUlUgaL1aU=
 		</data>
 		<key>Microsoft.CSharp.dll</key>
 		<data>
-		jPpNo92XvCXm1VsstXO3uQZe4QQ=
+		O5dBwaCFaruMXVQizLEImXKHQDI=
 		</data>
 		<key>ModernHttpClient.dll</key>
 		<data>
-		Ur/LwbA3bknz7+zxAk4xC0fBghA=
+		yoLAgxW9RbdmvffNizVHqZasFwI=
 		</data>
 		<key>Mono.CSharp.dll</key>
 		<data>
-		0zsMYnjb9cHxD5oS/cK0DAc4lCE=
+		CvsMV7nfyYr+u/pYN2Ipm8MFdtA=
 		</data>
 		<key>Mono.Dynamic.Interpreter.dll</key>
 		<data>
-		JOG2Iq8HZOuuqIXRM2FeyjWJ9wM=
+		9G3g6KqSXv4IIsnjhzPforQ0Dcw=
 		</data>
 		<key>NOTICE</key>
 		<data>
@@ -225,7 +233,7 @@
 		</data>
 		<key>Newtonsoft.Json.dll</key>
 		<data>
-		FpbtCxs04zAyp6hFAPOXY67j3sY=
+		Gr4beqd5glnQk3JuHOyRTHQt4v0=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -233,55 +241,55 @@
 		</data>
 		<key>ReactiveUI.dll</key>
 		<data>
-		tmAe1mbZBRITLVvs1TYLQ6yhyz4=
+		oGkPxMiMVVAnqNn31c4a7mFSUdA=
 		</data>
 		<key>ReactiveWeatherTouch.exe</key>
 		<data>
-		BHI6pMDTNkxe1b00Dv3UnaskYD8=
+		TDlunllnig2S9OYm20YoOSxjmtY=
 		</data>
 		<key>Splat.dll</key>
 		<data>
-		Ve7/T1T5yy2/Wiehn2Ddtkkz+XM=
+		2cwNiliO7yv8rViJow1s4i/cGRo=
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		46r59sb4FI8lmv/gzpSxEJU9dw8=
+		4+asvWPuzy2iQIZlYvZ95boi82A=
 		</data>
 		<key>System.Net.Http.dll</key>
 		<data>
-		h2VCmQQOdkI/WcHu/e+q9eCADMM=
+		TSkyz2p4Et8h3OSjwz6U1zIm5gM=
 		</data>
 		<key>System.Reactive.Core.dll</key>
 		<data>
-		2us3zevA+/0ycBCgwx0Or/XDzpM=
+		kc7z4PiIazS2K692ifIBBfdEjEo=
 		</data>
 		<key>System.Reactive.Interfaces.dll</key>
 		<data>
-		OaxyhIrFAQhyXAlT7KVUmPt6pes=
+		Y21ofDc9gQzo4dVDLWPW/JUlbGI=
 		</data>
 		<key>System.Reactive.Linq.dll</key>
 		<data>
-		2vzFXvUyUnr88zgu3H2oNDZzDdI=
+		v5Rv6N9mNdZhePPGx1MZOPqPM6A=
 		</data>
 		<key>System.Reactive.PlatformServices.dll</key>
 		<data>
-		+I94s78RFI1fJXm8W2Lq4dosu/E=
+		Wy3iFzexRtj9YVZ7ZALF/O3Zdlg=
 		</data>
 		<key>System.Runtime.Serialization.dll</key>
 		<data>
-		z2ADxy6ojkASuX4j83C8jtcVtk0=
+		WU7B2fL3lAnc/jvs1rLA5bMkkfI=
 		</data>
 		<key>System.Xml.Linq.dll</key>
 		<data>
-		6Z8ZKiQ/br2hIAYPQf9I+8rYGAM=
+		pDDfHWefzWUmaJ8j/MF/SrSa+sc=
 		</data>
 		<key>System.Xml.dll</key>
 		<data>
-		5Jdqsho+n9OvRWraDDfJ8PMl7vg=
+		4SqouyF/3oL+lPJUBW8ZWzvlYSs=
 		</data>
 		<key>System.dll</key>
 		<data>
-		mhhKaFc+3J/MyGXewdmY//Lil24=
+		fnSl+s6Bc20Eddi9Kj8eDVoom60=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -305,11 +313,11 @@
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		KtERsX8NuffXJPbDrFliESQW8xA=
+		WGXzffZe1vZwNum3NaICM80mqPM=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		XxyXPBM8BkcyKNldkNKNKJ2BQJE=
+		7X78J7eubOXRNEkKKihkoTxGWoI=
 		</data>
 		<key>success.png</key>
 		<data>
@@ -340,14 +348,14 @@
 	<dict>
 		<key>.*</key>
 		<true/>
-		<key>Info.plist</key>
+		<key>^Info.plist$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>10</real>
 		</dict>
-		<key>ResourceRules.plist</key>
+		<key>^ResourceRules.plist$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
@@ -359,26 +367,26 @@
 	<dict>
 		<key>.*</key>
 		<true/>
-		<key>Info.plist</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
-		</dict>
-		<key>ResourceRules.plist</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>100</real>
-		</dict>
 		<key>^(Frameworks|SharedFrameworks|Plugins|Plug-ins|XPCServices|Helpers|MacOS)/</key>
 		<dict>
 			<key>nested</key>
 			<true/>
 			<key>weight</key>
 			<real>0.0</real>
+		</dict>
+		<key>^Info.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>^ResourceRules.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>100</real>
 		</dict>
 		<key>^[^/]+$</key>
 		<dict>

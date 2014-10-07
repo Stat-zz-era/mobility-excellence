@@ -1,7 +1,9 @@
 ReactiveWeather.Android.MainActivity;reactiveweather.android.MainActivity
 ReactiveWeather.Android.InfoListActivity;reactiveweather.android.InfoListActivity
-ReactiveWeather.Android.RxAdapter`1;reactiveweather.android.RxAdapter_1
 ReactiveWeather.Android.CustomImageView;reactiveweather.android.CustomImageView
+ReactiveWeather.Android.DetailSpinners;reactiveweather.android.DetailSpinners
+ReactiveWeather.Android.RxSpinnerAdapter`1;reactiveweather.android.RxSpinnerAdapter_1
+ReactiveWeather.Android.RxListAdapter`1;reactiveweather.android.RxListAdapter_1
 ReactiveUI.JavaHolder;reactiveui.JavaHolder
 ReactiveUI.ReactiveListAdapter`1;reactiveui.ReactiveListAdapter_1
 ReactiveUI.ReactiveActivity`1;reactiveui.ReactiveActivity_1

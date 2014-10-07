@@ -3,9 +3,9 @@
 extern void *mono_aot_module_ReactiveWeatherTouch_info;
 extern void *mono_aot_module_monotouch_info;
 extern void *mono_aot_module_mscorlib_info;
-extern void *mono_aot_module_System_Core_info;
 extern void *mono_aot_module_System_info;
 extern void *mono_aot_module_System_Xml_info;
+extern void *mono_aot_module_System_Core_info;
 extern void *mono_aot_module_Mono_Dynamic_Interpreter_info;
 extern void *mono_aot_module_ReactiveUI_info;
 extern void *mono_aot_module_Splat_info;
@@ -28,9 +28,9 @@ void monotouch_register_modules ()
 	mono_aot_register_module (mono_aot_module_ReactiveWeatherTouch_info);
 	mono_aot_register_module (mono_aot_module_monotouch_info);
 	mono_aot_register_module (mono_aot_module_mscorlib_info);
-	mono_aot_register_module (mono_aot_module_System_Core_info);
 	mono_aot_register_module (mono_aot_module_System_info);
 	mono_aot_register_module (mono_aot_module_System_Xml_info);
+	mono_aot_register_module (mono_aot_module_System_Core_info);
 	mono_aot_register_module (mono_aot_module_Mono_Dynamic_Interpreter_info);
 	mono_aot_register_module (mono_aot_module_ReactiveUI_info);
 	mono_aot_register_module (mono_aot_module_Splat_info);
@@ -70,3 +70,10 @@ void monotouch_setup ()
 	monotouch_sgen = FALSE;
 }
 
+int main (int argc, char **argv)
+{
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	int rv = monotouch_main (argc, argv, false);
+	[pool drain];
+	return rv;
+}

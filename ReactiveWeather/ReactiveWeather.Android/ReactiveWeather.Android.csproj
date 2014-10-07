@@ -71,9 +71,13 @@
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\InfoListActivity.cs" />
     <Compile Include="Activities\CellView.cs" />
-    <Compile Include="CustomControls\ActivityBridge.cs" />
     <Compile Include="CustomControls\BindableProgress.cs" />
     <Compile Include="CustomControls\CustomImageView.cs" />
+    <Compile Include="Activities\DetailSpinners.cs" />
+    <Compile Include="Helpers\ObjectTypeHelper.cs" />
+    <Compile Include="Helpers\RxSpinnerAdapter.cs" />
+    <Compile Include="Helpers\ActivityBridge.cs" />
+    <Compile Include="Helpers\RxListAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -87,6 +91,7 @@
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\layout\InfoListActivity.axml" />
     <AndroidResource Include="Resources\layout\CellView.axml" />
+    <AndroidResource Include="Resources\layout\DetailSpinners.axml" />
   </ItemGroup>
   <Import Project="..\ReactiveWeather.Shared\ReactiveWeather.Shared.projitems" Label="Shared" Condition="Exists('..\ReactiveWeather.Shared\ReactiveWeather.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
@@ -99,6 +104,7 @@
   <ItemGroup>
     <Folder Include="Activities\" />
     <Folder Include="CustomControls\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidEnvironment Include="environment.txt" />

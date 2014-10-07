@@ -15,7 +15,7 @@ public class ReactiveListAdapter_1
 			"n_getCount:()I:GetGetCountHandler\n" +
 			"n_getView:(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;:GetGetView_ILandroid_view_View_Landroid_view_ViewGroup_Handler\n" +
 			"";
-		mono.android.Runtime.register ("ReactiveUI.ReactiveListAdapter`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", ReactiveListAdapter_1.class, __md_methods);
+		mono.android.Runtime.register ("ReactiveUI.ReactiveListAdapter`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", ReactiveListAdapter_1.class, __md_methods);
 	}
 
 
@@ -23,7 +23,7 @@ public class ReactiveListAdapter_1
 	{
 		super ();
 		if (getClass () == ReactiveListAdapter_1.class)
-			mono.android.TypeManager.Activate ("ReactiveUI.ReactiveListAdapter`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("ReactiveUI.ReactiveListAdapter`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

@@ -16,6 +16,7 @@ namespace ReactiveWeather.Android
             ViewModel = viewModel;
 
             //This is one way to bind
+         
 //            this.OneWayBind(ViewModel, vm => vm.weather[0].iconUrl, v => v.WeatherIcon.ImageUrl);
 //            this.OneWayBind(ViewModel, vm => vm.friendlyTimeStamp, v => v.Date.Text);
 //            this.OneWayBind(ViewModel, vm => vm.weather[0].description, v => v.Description.Text);

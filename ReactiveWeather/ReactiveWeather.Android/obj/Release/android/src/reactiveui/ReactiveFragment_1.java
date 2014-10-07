@@ -10,7 +10,7 @@ public class ReactiveFragment_1
 	static {
 		__md_methods = 
 			"";
-		mono.android.Runtime.register ("ReactiveUI.ReactiveFragment`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", ReactiveFragment_1.class, __md_methods);
+		mono.android.Runtime.register ("ReactiveUI.ReactiveFragment`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", ReactiveFragment_1.class, __md_methods);
 	}
 
 
@@ -18,7 +18,7 @@ public class ReactiveFragment_1
 	{
 		super ();
 		if (getClass () == ReactiveFragment_1.class)
-			mono.android.TypeManager.Activate ("ReactiveUI.ReactiveFragment`1, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("ReactiveUI.ReactiveFragment`1, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 	java.util.ArrayList refList;

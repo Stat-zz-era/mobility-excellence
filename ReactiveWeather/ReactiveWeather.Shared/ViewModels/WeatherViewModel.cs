@@ -3,6 +3,44 @@ using Common.PCL;
 using ReactiveUI;
 namespace ReactiveWeather.Shared
 {
+    public class CityData{
+        public int Id{ get; set;}
+        public string Description{get;set;}
+    }
+    public class SpinnerViewModel:ReactiveObject{
+        private int selectedInfoIndex;
+        private CityData selectedInfo;
+        private ReactiveList<CityData> cites;
+
+        public int SelectedInfoIndex
+        { 
+            get { return selectedInfoIndex; }
+            set { this.RaiseAndSetIfChanged(ref selectedInfoIndex, value); }
+        }
+        public CityData SelectedInfo
+        { 
+            get { return selectedInfo; }
+            set { this.RaiseAndSetIfChanged(ref selectedInfo, value); }
+        }
+        public ReactiveList<CityData> Cites
+        { 
+            get { return cites; }
+            set { this.RaiseAndSetIfChanged(ref cites, value); }
+        }
+        public SpinnerViewModel(){
+            Cites = new ReactiveList<CityData>();
+            Cites.Add(new CityData{ Id=1, Description="Tucson"});
+            Cites.Add(new CityData{ Id=2, Description="Mesa"});
+            Cites.Add(new CityData{ Id=3, Description="Gilbert"});
+            Cites.Add(new CityData{ Id=4, Description="Phoenix"});
+            Cites.Add(new CityData{ Id=5, Description="Scottsdale"});
+            Cites.Add(new CityData{ Id=6, Description="Glendale"});
+            Cites.Add(new CityData{ Id=7, Description="Peoria"});
+            Cites.Add(new CityData{ Id=8, Description="Queen Creek"});
+
+            SelectedInfoIndex = 2;
+        }
+    }
     public class WeatherViewModel:ReactiveObject
     {
        
@@ -14,6 +52,7 @@ namespace ReactiveWeather.Shared
         private Info selectedInfo;
         private bool isLoading;
         private string loadingMessage;
+        private int selectedInfoIndex;
 
         public string LoadingMessage
         {
@@ -33,6 +72,16 @@ namespace ReactiveWeather.Shared
         { 
             get { return selectedInfo; }
             set { this.RaiseAndSetIfChanged(ref selectedInfo, value); }
+        }
+
+        public int SelectedInfoIndex
+        { 
+            get { return selectedInfoIndex; }
+            set 
+            { 
+                this.RaiseAndSetIfChanged(ref selectedInfoIndex, value); 
+                SelectedInfo = this.WeatherResult.InfoList[value];
+            }
         }
 
         public WeatherObject WeatherResult
@@ -64,6 +113,7 @@ namespace ReactiveWeather.Shared
                         var searchUrl = string.Format(baseUrl, Location);
 
                         WeatherResult = await rs.GetAsync<WeatherObject>(searchUrl);
+                        SelectedInfoIndex = 2;
                         IsLoading = false;
                     }
                 });

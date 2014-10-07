@@ -12,7 +12,7 @@ public class ReactiveFragment
 			"n_onPause:()V:GetOnPauseHandler\n" +
 			"n_onResume:()V:GetOnResumeHandler\n" +
 			"";
-		mono.android.Runtime.register ("ReactiveUI.ReactiveFragment, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", ReactiveFragment.class, __md_methods);
+		mono.android.Runtime.register ("ReactiveUI.ReactiveFragment, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", ReactiveFragment.class, __md_methods);
 	}
 
 
@@ -20,7 +20,7 @@ public class ReactiveFragment
 	{
 		super ();
 		if (getClass () == ReactiveFragment.class)
-			mono.android.TypeManager.Activate ("ReactiveUI.ReactiveFragment, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("ReactiveUI.ReactiveFragment, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

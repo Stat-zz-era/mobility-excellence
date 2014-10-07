@@ -8,6 +8,7 @@
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Android/obj/Debug/res/drawable/icon.png
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Android/obj/Debug/res/layout/infolistactivity.xml
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Android/obj/Debug/res/layout/cellview.xml
+/Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Android/obj/Debug/res/layout/detailspinners.xml
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Android/obj/Debug/R.cs.flag
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Android/bin/Debug/ReactiveWeather.Android-Signed.apk
 /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Android/obj/Debug/uploadflags.txt

@@ -1,6 +1,6 @@
-# Version: 7.4.0.108 (77efa3f)
+# Version: 8.2.0.193 (959c1e4)
 # [first argument, ignore] # /Users/Les/mobility-excellence/ReactiveWeather/ReactiveWeather.Touch/bin/iPhone/Ad-Hoc/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/7.4.0.108/bin/mtouch \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.2.0.193/bin/mtouch \
 	-sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
 	--cache \
@@ -28,10 +28,6 @@
 	-r \
 	/Users/Les/mobility-excellence/ReactiveWeather/packages/Rx-PlatformServices.2.2.5/lib/portable-windows8+net45+wp8/System.Reactive.PlatformServices.dll \
 	-r \
-	/Users/Les/mobility-excellence/ReactiveWeather/packages/Splat.1.5.0/lib/monotouch/Splat.dll \
-	-r \
-	/Users/Les/mobility-excellence/ReactiveWeather/packages/reactiveui-core.6.0.6/lib/Monotouch/ReactiveUI.dll \
-	-r \
 	/Users/Les/mobility-excellence/ReactiveWeather/packages/Newtonsoft.Json.6.0.5/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Net.Http.dll \
@@ -39,9 +35,13 @@
 	/Users/Les/mobility-excellence/ReactiveWeather/Components/btprogresshud-1.10/lib/ios/BTProgressHUD.dll \
 	-r \
 	/Users/Les/mobility-excellence/ReactiveWeather/Components/calabash-10.0/lib/ios/Calabash.dll \
+	-r \
+	/Users/Les/mobility-excellence/ReactiveWeather/packages/reactiveui-core.6.1.0/lib/Monotouch/ReactiveUI.dll \
+	-r \
+	/Users/Les/mobility-excellence/ReactiveWeather/packages/Splat.1.5.1/lib/monotouch/Splat.dll \
 	-linksdkonly \
 	-sdk \
-	7.1 \
+	8.0 \
 	-targetver \
 	7.0 \
 	--abi=armv7 \

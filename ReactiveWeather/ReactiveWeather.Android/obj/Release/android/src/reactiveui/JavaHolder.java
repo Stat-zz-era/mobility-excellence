@@ -10,7 +10,7 @@ public class JavaHolder
 	static {
 		__md_methods = 
 			"";
-		mono.android.Runtime.register ("ReactiveUI.JavaHolder, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", JavaHolder.class, __md_methods);
+		mono.android.Runtime.register ("ReactiveUI.JavaHolder, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", JavaHolder.class, __md_methods);
 	}
 
 
@@ -18,7 +18,7 @@ public class JavaHolder
 	{
 		super ();
 		if (getClass () == JavaHolder.class)
-			mono.android.TypeManager.Activate ("ReactiveUI.JavaHolder, ReactiveUI, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("ReactiveUI.JavaHolder, ReactiveUI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 	java.util.ArrayList refList;

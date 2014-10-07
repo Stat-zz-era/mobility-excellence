@@ -56,8 +56,11 @@ namespace ReactiveWeather.Touch
         }
 
         private void CalabashTesting(){
-            txtLocation.AccessibilityIdentifier = "txtLocation";
-            btnSearch.AccessibilityIdentifier = "btnSearch";
+
+//            txtLocation.AccessibilityLabel = "txtLocation"; //Used with Marked
+//            btnSearch.AccessibilityLabel = "btnSearch";
+//            txtLocation.AccessibilityIdentifier = "txtLocation"; //Used with Id
+//            btnSearch.AccessibilityIdentifier = "btnSearch";
         }
 
     }

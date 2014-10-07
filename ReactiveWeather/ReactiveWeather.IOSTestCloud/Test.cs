@@ -11,6 +11,7 @@ namespace ReactiveWeather.IOSTestCloud
     public class Test
     {
         private iOSApp app;
+
         private string PathToIPA { get; set; }
 
         [TestFixtureSetUp]
@@ -24,11 +25,14 @@ namespace ReactiveWeather.IOSTestCloud
 
 
         [SetUp()]
-        public void Start(){
-            try{
-            app = ConfigureApp.iOS.AppBundle(PathToIPA).StartApp();
+        public void Start()
+        {
+            try
+            {
+                app = ConfigureApp.iOS.AppBundle(PathToIPA).StartApp();
             }
-            catch(Exception ex){
+            catch (Exception ex)
+            {
                 var m = ex.Message;
             }
         }
@@ -36,11 +40,16 @@ namespace ReactiveWeather.IOSTestCloud
         [Test()]
         public void TestCase()
         {
+            //app.Repl();
             app.Screenshot("Initial Page");
-            app.EnterText(c => c.Id("txtLocation"),"Gilbert,az");
+            app.WaitForElement(x => x.Id("txtLocation"), "Timed out waiting for element");
+            app.EnterText(c => c.Id("txtLocation"), "Gilbert,az");
             app.Screenshot("Capture Input");
             app.Tap(c => c.Id("btnSearch"));
             app.Screenshot("Capture Loading");
+            app.WaitForElement(x => x.Class("UITableView"), "Timed out waiting for element");
+            app.Screenshot("Returning to search screen");
+            app.Tap(x=>x.Text("Back")); 
         }
     }
 }
